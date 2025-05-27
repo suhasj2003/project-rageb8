@@ -43,10 +43,11 @@ public class PlayerMovement : MonoBehaviour
         MoveInput = Input.GetAxis("Horizontal");
         m_IsWallSliding = OnWall() && !IsGrounded() && Body.linearVelocity.y < 0;
 
-        // Ground check and cooldown reset
-        if (IsGrounded()) WallJumpCooldown = 1.1f;
+        if (IsGrounded())
+        {
+            WallJumpCooldown = 1.1f;
+        }
 
-        // Movement and wall sliding
         if (m_IsWallSliding)
         {
             Body.linearVelocity = new Vector2(0, Mathf.Max(Body.linearVelocity.y, -m_WallSlideSpeed));
@@ -54,15 +55,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (WallJumpCooldown > 1f)
         {
-            // Regular movement
             Body.linearVelocity = new Vector2(MoveInput * m_Speed, Body.linearVelocity.y);
             Body.gravityScale = m_GravityScale;
         }
 
-        // Always update facing direction based on input
         UpdatePlayerFacing();
 
-        // Jump input
         if (Input.GetKey(KeyCode.Space))
         {
             Jump();
@@ -72,28 +70,38 @@ public class PlayerMovement : MonoBehaviour
             WallJumpCooldown += Time.deltaTime;
         }
 
-        // Consolidated gravity scaling
         UpdateGravity();
 
-        // Animations
         Anim.SetBool("Run", MoveInput != 0);
         Anim.SetBool("Grounded", IsGrounded());
     }
 
     private void UpdatePlayerFacing()
     {
-        if (MoveInput > 0.01f) transform.localScale = new Vector3(5, 5, 1);
-        else if (MoveInput < -0.01f) transform.localScale = new Vector3(-5, 5, 1);
-
+        if (MoveInput > 0.01f)
+        {
+            transform.localScale = new Vector3(5, 5, 1);
+        }
+        else if (MoveInput < -0.01f)
+        {
+            transform.localScale = new Vector3(-5, 5, 1);
+        }
     }
+
     private void UpdateGravity()
     {
         if (Body.linearVelocity.y < 0)
+        {
             Body.gravityScale = m_GravityScale * m_FallMultiplier;
+        }
         else if (Body.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
             Body.gravityScale = m_GravityScale * m_LowJumpMultiplier;
+        }
         else
+        {
             Body.gravityScale = m_GravityScale;
+        }
     }
 
     private void Jump()
@@ -131,7 +139,6 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.localScale = new Vector3(-pushDirection * 5, 5, 1);
     }
-
 
     private bool IsGrounded()
     {
