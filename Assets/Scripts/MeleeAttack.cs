@@ -4,18 +4,18 @@ public class MeleeAttack : MonoBehaviour
 {
     public PlayerMovement PM;
 
-    private bool isAttacking = false;
-    private bool comboAvailable = false;
-    private bool comboQueued = false;
-    public float attackCooldown = 2f;
+    private bool IsAttacking = false;
+    private bool ComboAvailable = false;
+    private bool ComboQueued = false;
+    public float m_AttackCooldown = 2f;
 
-    private Animator anim;
-    private BoxCollider2D hitbox;
+    private Animator Anim;
+    private BoxCollider2D Hitbox;
 
     void Awake()
     {
-        anim = GetComponent<Animator>();
-        hitbox = transform.Find("axeHitbox").GetComponent<BoxCollider2D>();
+        Anim = GetComponent<Animator>();
+        Hitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -28,29 +28,29 @@ public class MeleeAttack : MonoBehaviour
 
     private void Attack()
     {
-        if (!isAttacking)
+        if (!IsAttacking)
         {
-            isAttacking = true;
-            PM.canMove = false;
-            comboAvailable = true;
-            comboQueued = false;
+            IsAttacking = true;
+            PM.m_CanMove = false;
+            ComboAvailable = true;
+            ComboQueued = false;
 
-            anim.SetTrigger("attack");
-            Invoke("ActivateHitbox", 0.2f);
-            Invoke("DeactivateHitbox", 0.4f);
+            Anim.SetTrigger("Attack1");
+            HitboxToggle();
         }
-        else if (comboAvailable)
+        else if (ComboAvailable)
         {
-            comboQueued = true;
-            comboAvailable = false;
+            ComboQueued = true;
+            ComboAvailable = false;
         }
     }
 
     public void OnAttack1Complete()
     {
-        if (comboQueued)
+        if (ComboQueued)
         {
-            anim.SetTrigger("attack2");
+            Anim.SetTrigger("Attack2");
+            HitboxToggle();
         }
         else
         {
@@ -63,21 +63,27 @@ public class MeleeAttack : MonoBehaviour
         EndAttack();
     }
 
+    private void HitboxToggle()
+    {
+        Invoke("ActivateHitbox", 0.1f);
+        Invoke("DeactivateHitbox", 0.25f);
+    }
+
     private void EndAttack()
     {
-        PM.canMove = true;
-        isAttacking = false;
-        comboAvailable = false;
-        comboQueued = false;
+        PM.m_CanMove = true;
+        IsAttacking = false;
+        ComboAvailable = false;
+        ComboQueued = false;
     }
 
     void ActivateHitbox()
     {
-        hitbox.gameObject.SetActive(true);
+        Hitbox.gameObject.SetActive(true);
     }
 
     void DeactivateHitbox()
     {
-        hitbox.gameObject.SetActive(false);
+        Hitbox.gameObject.SetActive(false);
     }
 }
