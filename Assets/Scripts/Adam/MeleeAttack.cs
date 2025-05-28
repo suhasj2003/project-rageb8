@@ -10,12 +10,14 @@ public class MeleeAttack : MonoBehaviour
     public float m_AttackCooldown = 2f;
 
     private Animator Anim;
-    private BoxCollider2D Hitbox;
+    private BoxCollider2D AxeHitbox;
+    private BoxCollider2D KickHitbox;
 
     void Awake()
     {
         Anim = GetComponent<Animator>();
-        Hitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
+        AxeHitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
+        KickHitbox = transform.Find("KickHitbox").GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -28,7 +30,12 @@ public class MeleeAttack : MonoBehaviour
 
     private void Attack()
     {
-        if (!IsAttacking)
+        if (!PM.IsGrounded())
+        {
+            Anim.SetTrigger("AttackJump");
+            KickHitboxToggle();
+        }
+        else if (!IsAttacking)
         {
             IsAttacking = true;
             PM.m_CanMove = false;
@@ -36,7 +43,7 @@ public class MeleeAttack : MonoBehaviour
             ComboQueued = false;
 
             Anim.SetTrigger("Attack1");
-            HitboxToggle();
+            AxeHitboxToggle();
         }
         else if (ComboAvailable)
         {
@@ -45,12 +52,12 @@ public class MeleeAttack : MonoBehaviour
         }
     }
 
-    public void OnAttack1Complete()
+    public void Attack1()
     {
         if (ComboQueued)
         {
             Anim.SetTrigger("Attack2");
-            HitboxToggle();
+            AxeHitboxToggle();
         }
         else
         {
@@ -58,15 +65,21 @@ public class MeleeAttack : MonoBehaviour
         }
     }
 
-    public void OnAttack2Complete()
+    public void Attack2()
     {
         EndAttack();
     }
 
-    private void HitboxToggle()
+    private void AxeHitboxToggle()
     {
-        Invoke("ActivateHitbox", 0.1f);
-        Invoke("DeactivateHitbox", 0.25f);
+        Invoke("ActivateAxeHitbox", 0.1f);
+        Invoke("DeactivateAxeHitbox", 0.25f);
+    }
+
+    private void KickHitboxToggle()
+    {
+        Invoke("ActivateKickHitbox", 0.1f);
+        Invoke("DeactivateKickHitbox", 0.25f);
     }
 
     private void EndAttack()
@@ -77,13 +90,23 @@ public class MeleeAttack : MonoBehaviour
         ComboQueued = false;
     }
 
-    void ActivateHitbox()
+    void ActivateAxeHitbox()
     {
-        Hitbox.gameObject.SetActive(true);
+        AxeHitbox.gameObject.SetActive(true);
     }
 
-    void DeactivateHitbox()
+    void DeactivateAxeHitbox()
     {
-        Hitbox.gameObject.SetActive(false);
+        AxeHitbox.gameObject.SetActive(false);
+    }
+
+    void ActivateKickHitbox()
+    {
+        KickHitbox.gameObject.SetActive(true);
+    }
+
+    void DeactivateKickHitbox()
+    {
+        KickHitbox.gameObject.SetActive(false);
     }
 }

@@ -171,7 +171,7 @@ ScriptedImporter:
     uvTransform: {x: 69, y: 4}
   - name: Frame_2
     originalName: 
-    pivot: {x: 0.20930234, y: 0}
+    pivot: {x: 0.23076925, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -179,7 +179,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 81
-      width: 43
+      width: 39
       height: 32
     spriteID: 69789cf1ab304c1479b93d1a13c371f8
     spriteBone: []
@@ -282,7 +282,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 55
+      x: 51
       y: 81
       width: 37
       height: 31
@@ -294,7 +294,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 55, y: 81}
+    uvTransform: {x: 51, y: 81}
   - name: Frame_8
     originalName: 
     pivot: {x: 0.43243238, y: 0}
@@ -303,7 +303,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 100
+      x: 96
       y: 81
       width: 37
       height: 31
@@ -315,7 +315,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 100, y: 81}
+    uvTransform: {x: 96, y: 81}
   - name: Frame_9
     originalName: 
     pivot: {x: 0.21052632, y: 0}
@@ -492,7 +492,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 145
+      x: 141
       y: 81
       width: 36
       height: 31
@@ -504,7 +504,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 145, y: 81}
+    uvTransform: {x: 141, y: 81}
   - name: Frame_18
     originalName: 
     pivot: {x: 0.5555556, y: 0}
@@ -513,7 +513,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 189
+      x: 185
       y: 81
       width: 36
       height: 31
@@ -525,7 +525,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 189, y: 81}
+    uvTransform: {x: 185, y: 81}
   - name: Frame_19
     originalName: 
     pivot: {x: 0.49999997, y: 0}
@@ -586,7 +586,7 @@ ScriptedImporter:
       cellRect:
         x: 39
         y: 0
-        width: 43
+        width: 39
         height: 32
       spriteId: 69789cf1ab304c1479b93d1a13c371f8
     - name: Frame_3
