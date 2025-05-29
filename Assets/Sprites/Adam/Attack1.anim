@@ -26,9 +26,9 @@ AnimationClip:
       value: {fileID: -6145577808477816098, guid: 10d4360010de1d545a34461b21960dfa, type: 3}
     - time: 0.18333334
       value: {fileID: -8025568095784178720, guid: 10d4360010de1d545a34461b21960dfa, type: 3}
-    - time: 0.28333333
+    - time: 0.26666668
       value: {fileID: -6041391903364461056, guid: 10d4360010de1d545a34461b21960dfa, type: 3}
-    - time: 0.38333333
+    - time: 0.35
       value: {fileID: -6005804475530688112, guid: 10d4360010de1d545a34461b21960dfa, type: 3}
     - time: 0.41666666
       value: {fileID: -3205479668699095123, guid: 10d4360010de1d545a34461b21960dfa, type: 3}
@@ -85,8 +85,29 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
-    functionName: Attack1
+  - time: 0
+    functionName: EnableComboWindow
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.26666668
+    functionName: DisableComboWindow
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.35
+    functionName: CheckForCombo
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.41666666
+    functionName: EndAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -18,11 +18,12 @@ public class MeleeAttack : MonoBehaviour
         Anim = GetComponent<Animator>();
         AxeHitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
         KickHitbox = transform.Find("KickHitbox").GetComponent<BoxCollider2D>();
+        Anim.SetBool("IsAttacking", false);
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !Anim.GetBool("IsRolling") && !Anim.GetBool("IsWallSliding"))
         {
             Attack();
         }
@@ -30,44 +31,60 @@ public class MeleeAttack : MonoBehaviour
 
     private void Attack()
     {
-        if (!PM.IsGrounded())
+        if (!IsAttacking || ComboAvailable)
         {
-            Anim.SetTrigger("AttackJump");
-            KickHitboxToggle();
-        }
-        else if (!IsAttacking)
-        {
-            IsAttacking = true;
-            PM.m_CanMove = false;
-            ComboAvailable = true;
-            ComboQueued = false;
+            Anim.SetBool("IsAttacking", true);
 
-            Anim.SetTrigger("Attack1");
-            AxeHitboxToggle();
-        }
-        else if (ComboAvailable)
-        {
-            ComboQueued = true;
-            ComboAvailable = false;
+            if (PM.IsGrounded())
+            {
+                if (!IsAttacking) 
+                {
+
+                    ResetCombo();
+
+                    IsAttacking = true;
+                    PM.m_CanMove = false;
+                    Anim.SetTrigger("Attack1");
+                    AxeHitboxToggle();
+                }
+                else if (ComboAvailable) 
+                {
+                    ComboQueued = true;
+                }
+            }
+            else if (!PM.IsWallSliding) 
+            {
+                ResetCombo();
+                IsAttacking = true;
+                Anim.SetTrigger("AttackJump");
+                KickHitboxToggle();
+            }
         }
     }
 
-    public void Attack1()
+    public void EnableComboWindow()
+    {
+        ComboAvailable = true;
+    }
+
+    private void ResetCombo()
+    {
+        ComboAvailable = false;
+        ComboQueued = false;
+    }
+
+    public void DisableComboWindow()
+    {
+        ComboAvailable = false;
+    }
+
+    public void CheckForCombo()
     {
         if (ComboQueued)
         {
             Anim.SetTrigger("Attack2");
             AxeHitboxToggle();
         }
-        else
-        {
-            EndAttack();
-        }
-    }
-
-    public void Attack2()
-    {
-        EndAttack();
     }
 
     private void AxeHitboxToggle()
@@ -84,9 +101,10 @@ public class MeleeAttack : MonoBehaviour
 
     private void EndAttack()
     {
+        Anim.SetBool("IsAttacking", false);
         PM.m_CanMove = true;
         IsAttacking = false;
-        ComboAvailable = false;
+        ComboAvailable = PM.IsGrounded() && ComboQueued;
         ComboQueued = false;
     }
 

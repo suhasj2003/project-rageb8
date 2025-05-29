@@ -9,7 +9,7 @@ public class DodgeRoll : MonoBehaviour
     public float RollSpeed = 10f;
     private Vector2 RollDirection;
 
-    public float m_PostRollCooldown = 0f;
+    public float m_PostRollCooldown = 1f;
 
     private Animator Anim;
 
@@ -20,6 +20,8 @@ public class DodgeRoll : MonoBehaviour
 
     void Update()
     {
+        if (Anim.GetBool("IsAttacking")) return;
+
         HandleRollMovement();
 
         if (PM.m_IsRolling) return;
@@ -38,7 +40,7 @@ public class DodgeRoll : MonoBehaviour
             RollTimer = RollDuration;
             RollDirection = new Vector2(Mathf.Sign(transform.localScale.x), 0);
             Anim.SetTrigger("Roll");
-            Anim.SetBool("Rolling", true);
+            Anim.SetBool("IsRolling", true);
             PM.m_CanMove = false;
         }
     }
@@ -52,7 +54,7 @@ public class DodgeRoll : MonoBehaviour
     private void EndRoll()
     {
         PM.m_IsRolling = false;
-        Anim.SetBool("Rolling", false);
+        Anim.SetBool("IsRolling", false);
         PM.m_Body.linearVelocity = Vector2.zero;
         PM.m_Body.gravityScale = PM.m_GravityScale;
         Invoke(nameof(ResetControl), m_PostRollCooldown);

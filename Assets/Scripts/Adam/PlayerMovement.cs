@@ -16,24 +16,26 @@ public class PlayerMovement : MonoBehaviour
     [Header("Wall Sliding")]
     public float m_WallSlideSpeed = 2f;  
     public float m_WallSlideGravity = 1f; 
-    public float m_WallJumpHorizontalForce = 5f;
-    public float m_WallJumpVerticalForce;
+    public float m_WallJumpHorizontalForce = 8f;
+    public float m_WallJumpVerticalForce = 15f;
+    public bool IsWallSliding = false;
 
     [Header("Roll")]
     public bool m_IsRolling = false;
 
-    private bool IsWallSliding = false; 
+    [Header("Components")]
+    public Rigidbody2D m_Body;
+
     private float GroundCheckRadius = 0.1f;
     private float MoveInput;
     private float WallJumpCooldown = 1.1f;
-    float WallDirection;
     private float HorizontalInput;
+    private float WallDirection;
 
     private bool JustWallJumped = false;
     private bool WasGroundedLastFrame = false;
     private bool WasWallSlidingLastFrame = false;
 
-    public Rigidbody2D m_Body;
     private Animator Anim;
     private BoxCollider2D BoxCollider;
 
@@ -42,22 +44,20 @@ public class PlayerMovement : MonoBehaviour
         m_Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         BoxCollider = GetComponent<BoxCollider2D>();
         Anim = GetComponent<Animator>();
-
-        m_WallJumpVerticalForce = m_JumpForce * 0.8f;
     }
 
     private void Update()
     {
-        if (!m_CanMove) return;
+        if (!m_CanMove || Anim.GetBool("IsAttacking")) return;
 
         if (m_IsRolling) return;
 
         MoveInput = Input.GetAxis("Horizontal");
         IsWallSliding = OnWall() && !IsGrounded() && m_Body.linearVelocity.y < 0;
         
-        Anim.SetBool("WallSliding", IsWallSliding);
-        Anim.SetBool("Grounded", IsGrounded());
-        Anim.SetBool("Run", MoveInput != 0);
+        Anim.SetBool("IsWallSliding", IsWallSliding);
+        Anim.SetBool("IsGrounded", IsGrounded());
+        Anim.SetBool("IsRunning", MoveInput != 0);
 
         if (IsGrounded())
         {
@@ -137,22 +137,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleWallJump()
     {
-        float pushDirection = -Mathf.Sign(transform.localScale.x);
-        m_Body.linearVelocity = new Vector2(
-            pushDirection * m_WallJumpHorizontalForce,
-            m_WallJumpVerticalForce
-        );
+        //float pushDirection = -Mathf.Sign(transform.localScale.x);
+        //m_Body.linearVelocity = new Vector2(
+        //    pushDirection * m_WallJumpHorizontalForce,
+        //    m_WallJumpVerticalForce
+        //);
 
         Anim.SetTrigger("WallJump");
-        Anim.SetBool("WallSliding", false);
-        WallJumpCooldown = 0;
-        JustWallJumped = true;
+        //Anim.SetBool("WallSliding", false);
+        //WallJumpCooldown = 0;
+        //JustWallJumped = true;
     }
 
     private void OnWallJumpFlip()
     {
         float pushDirection = -Mathf.Sign(transform.localScale.x);
+        m_Body.linearVelocity = new Vector2(
+            pushDirection * m_WallJumpHorizontalForce,
+            m_WallJumpVerticalForce
+        );
         transform.localScale = new Vector3(pushDirection * 5, 5, 1);
+
+        Anim.SetBool("IsWallSliding", false);
+        WallJumpCooldown = 0;
+        JustWallJumped = true;
     }
 
     private void Jump()
