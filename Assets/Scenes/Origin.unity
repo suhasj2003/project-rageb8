@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 400299880}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -3.04, z: 0}
+  m_LocalPosition: {x: -11.15, y: -3.83, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Speed: 5
+  m_JumpForce: 15
   m_GravityScale: 5
   m_FallMultiplier: 2.5
   m_LowJumpMultiplier: 2
@@ -281,14 +282,17 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 1834167547}
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 768
   m_WallLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
   m_WallSlideSpeed: 2
   m_WallSlideGravity: 1
   m_WallJumpHorizontalForce: 5
   m_WallJumpVerticalForce: 12
+  IsWallSliding: 0
+  m_IsRolling: 0
+  m_Body: {fileID: 400299884}
 --- !u!61 &400299886
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -637,6 +641,7 @@ Transform:
   - {fileID: 693839408}
   - {fileID: 1257443763}
   - {fileID: 466061722}
+  - {fileID: 668700029}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
@@ -940,12 +945,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668700027}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3079, y: -0.8483, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.44327998, y: 0.078040004, z: 0}
   m_LocalScale: {x: 20.109415, y: 7.166513, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 489778373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693839405
 GameObject:
@@ -958,7 +963,7 @@ GameObject:
   - component: {fileID: 693839408}
   - component: {fileID: 693839407}
   - component: {fileID: 693839406}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2065,4 +2070,3 @@ SceneRoots:
   - {fileID: 1956329173}
   - {fileID: 1973692900}
   - {fileID: 1198854648}
-  - {fileID: 668700029}
