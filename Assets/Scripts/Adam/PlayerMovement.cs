@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Jumping")]
+    [Header("Running")]
     public float m_Speed = 5f;
+
+    [Header("Jumping")]
     public float m_JumpForce = 15f;
     public float m_GravityScale = 5f;
     public float m_FallMultiplier = 2.5f;
@@ -137,16 +139,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleWallJump()
     {
-        //float pushDirection = -Mathf.Sign(transform.localScale.x);
-        //m_Body.linearVelocity = new Vector2(
-        //    pushDirection * m_WallJumpHorizontalForce,
-        //    m_WallJumpVerticalForce
-        //);
-
         Anim.SetTrigger("WallJump");
-        //Anim.SetBool("WallSliding", false);
-        //WallJumpCooldown = 0;
-        //JustWallJumped = true;
     }
 
     private void OnWallJumpFlip()
