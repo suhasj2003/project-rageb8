@@ -26,7 +26,7 @@ public class DodgeRoll : MonoBehaviour
 
         if (PM.m_IsRolling) return;
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             Roll();
         }

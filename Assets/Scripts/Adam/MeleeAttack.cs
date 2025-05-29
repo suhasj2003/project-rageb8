@@ -17,7 +17,7 @@ public class MeleeAttack : MonoBehaviour
     {
         Anim = GetComponent<Animator>();
         AxeHitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
-        KickHitbox = transform.Find("KickHitbox").GetComponent<BoxCollider2D>();
+        KickHitbox = transform.Find("AxeHitbox").GetComponent<BoxCollider2D>();
         Anim.SetBool("IsAttacking", false);
     }
 
