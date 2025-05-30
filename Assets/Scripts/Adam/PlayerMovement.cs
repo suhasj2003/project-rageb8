@@ -48,13 +48,15 @@ public class PlayerMovement : MonoBehaviour
         PlayerObject = GameObject.Find("Player");
         GroundCheck = gameObject.transform.Find("GroundCheck");
 
-        _fallSpeedYDampingChangeThreshold = CameraManager.Instance.FallSpeedYDampingChangeThreshold;
+        
     }
     void Start()
     {
         Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         Anim.SetBool("CanMove", true);
         //Time.timeScale = 0.5f;
+
+        _fallSpeedYDampingChangeThreshold = CameraManager.Instance.FallSpeedYDampingChangeThreshold;
     }
 
     void Update()

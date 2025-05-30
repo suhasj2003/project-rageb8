@@ -154,9 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3285556998d634fb3426c6ab5438c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 234753663}
-  RollDuration: 0.4
-  RollSpeed: 10
+  m_RollDuration: 0.4
+  m_RollSpeed: 10
   m_PostRollCooldown: 1
 --- !u!114 &234753662
 MonoBehaviour:
@@ -165,12 +164,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234753659}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47d1ec83a9382804898051d3aa46de1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 234753663}
   m_AttackCooldown: 2
 --- !u!114 &234753663
 MonoBehaviour:
@@ -189,8 +187,6 @@ MonoBehaviour:
   m_GravityScale: 5
   m_FallMultiplier: 2.5
   m_LowJumpMultiplier: 2
-  m_CanMove: 1
-  m_GroundCheck: {fileID: 234753667}
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 768
@@ -201,10 +197,6 @@ MonoBehaviour:
   m_WallSlideGravity: 1
   m_WallJumpHorizontalForce: 8
   m_WallJumpVerticalForce: 15
-  IsWallSliding: 0
-  m_IsRolling: 0
-  m_Body: {fileID: 234753665}
-  PlayerObject: {fileID: 234753659}
 --- !u!61 &234753664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,7 +258,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.2
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -346,8 +338,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1832932615}
-  - {fileID: 2091474714}
+  - {fileID: 1411215142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &234753668
@@ -384,7 +375,7 @@ GameObject:
   - component: {fileID: 346152430}
   - component: {fileID: 346152429}
   - component: {fileID: 346152428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14243,7 +14234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3426aec171c82d42bb54411ce72e93f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _virtualCameras: []
+  _virtualCameras:
+  - {fileID: 871098598}
   _fallPanAmount: 0.25
   _fallYPanTime: 0.35
   FallSpeedYDampingChangeThreshold: -15
@@ -19848,7 +19840,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1832932614
+--- !u!1 &1411215141
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19856,23 +19848,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1832932615}
-  - component: {fileID: 1832932616}
-  - component: {fileID: 1832932617}
+  - component: {fileID: 1411215142}
   m_Layer: 7
-  m_Name: AxeHitbox
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1832932615
+  m_IsActive: 1
+--- !u!4 &1411215142
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832932614}
+  m_GameObject: {fileID: 1411215141}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -19881,142 +19871,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 234753667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1832932616
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832932614}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.15167394, y: 0.15237312}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.28132993, y: 0.20130995}
-  m_EdgeRadius: 0
---- !u!114 &1832932617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832932614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d14b00b2293eb4889848f6fd41855b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &2091474713
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2091474714}
-  - component: {fileID: 2091474715}
-  m_Layer: 7
-  m_Name: KickHitbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2091474714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091474713}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 234753667}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2091474715
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091474713}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.1881128, y: 0.111362636}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2987156, y: 0.21745035}
-  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
