@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 399505022}
   - component: {fileID: 399505023}
   m_Layer: 0
-  m_Name: AxeHitbox
+  m_Name: AxeLightHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1040,11 +1040,11 @@ Transform:
   m_GameObject: {fileID: 1129863606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.025999999, y: 0.4510258, z: -10}
-  m_LocalScale: {x: 0.2, y: 0.19956894, z: 1}
+  m_LocalPosition: {x: 0.15799999, y: 0.046000004, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1854372951}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191745280
 GameObject:
@@ -1246,6 +1246,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280283963}
   m_CullTransparentMesh: 1
+--- !u!1 &1282469808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282469809}
+  - component: {fileID: 1282469811}
+  - component: {fileID: 1282469810}
+  m_Layer: 0
+  m_Name: AxeHeavyHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1282469809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282469808}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1854372951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282469810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282469808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d14b00b2293eb4889848f6fd41855b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackData: {fileID: 11400000, guid: eee939e34e4d6ac4f9fe4c25cf608d9e, type: 2}
+--- !u!61 &1282469811
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282469808}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.22944765, y: 0.16003808}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.44112006, y: 0.31980866}
+  m_EdgeRadius: 0
 --- !u!1 &1326525704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,7 +1933,7 @@ GameObject:
   - component: {fileID: 1783979357}
   - component: {fileID: 1783979356}
   m_Layer: 0
-  m_Name: KickHitbox
+  m_Name: AxeKickHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1874,7 +1966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d14b00b2293eb4889848f6fd41855b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackData: {fileID: 0}
+  AttackData: {fileID: 11400000, guid: 11a4745711b28d243bd7637bc7032fae, type: 2}
 --- !u!61 &1783979357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1964,7 +2056,6 @@ MonoBehaviour:
   m_GravityScale: 5
   m_FallMultiplier: 1
   m_LowJumpMultiplier: 2
-  m_CanMove: 1
   m_GroundCheck: {fileID: 1673861284}
   m_GroundLayer:
     serializedVersion: 2
@@ -1976,9 +2067,6 @@ MonoBehaviour:
   m_WallSlideGravity: 1
   m_WallJumpHorizontalForce: 5
   m_WallJumpVerticalForce: 20
-  IsWallSliding: 0
-  m_IsRolling: 0
-  m_Body: {fileID: 1854372949}
 --- !u!50 &1854372949
 Rigidbody2D:
   serializedVersion: 5
@@ -2076,8 +2164,8 @@ Transform:
   m_Children:
   - {fileID: 1673861284}
   - {fileID: 399505021}
+  - {fileID: 1282469809}
   - {fileID: 1783979355}
-  - {fileID: 1129863610}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1854372952
@@ -2160,7 +2248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d1ec83a9382804898051d3aa46de1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 1854372948}
   m_AttackCooldown: 2
 --- !u!114 &1854372955
 MonoBehaviour:
@@ -2174,9 +2261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3285556998d634fb3426c6ab5438c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 1854372948}
-  RollDuration: 0.4
-  RollSpeed: 10
+  m_RollDuration: 0.4
+  m_RollSpeed: 10
   m_PostRollCooldown: 0
 --- !u!114 &1854372956
 MonoBehaviour:
@@ -2501,7 +2587,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.94, y: 1}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &2139191632
 Rigidbody2D:
@@ -2515,7 +2601,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 500
+  m_Mass: 500000
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -2627,6 +2713,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 84977713}
   - {fileID: 1191745281}
+  - {fileID: 1129863610}
   - {fileID: 1854372951}
   - {fileID: 1394415430}
   - {fileID: 1326525706}
