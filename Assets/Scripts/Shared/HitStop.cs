@@ -2,33 +2,31 @@ using UnityEngine;
 
 public class HitStop : MonoBehaviour
 {
-    public Animator Animator;
-    public float HitStopDuration = 0.07f;
+    public float m_HitStopDuration = 0.07f;
     private float HitStopTimer = 0f;
+
+    private Animator Anim;
 
     void Awake()
     {
-        if (Animator == null)
-            Animator = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();
     }
 
     public void DoHitStop()
     {
-        if (Animator == null) return;
-        Animator.speed = 0f;
-        HitStopTimer = HitStopDuration;
-        //Debug.Log("Animator paused");
+        if (Anim == null) return;
+        Anim.speed = 0f;
+        HitStopTimer = m_HitStopDuration;
     }
 
     void Update()
     {
         if (HitStopTimer > 0)
-        {
+        { 
             HitStopTimer -= Time.deltaTime;
             if (HitStopTimer <= 0)
             {
-                Animator.speed = 1f;
-                //Debug.Log("Animator resumed");
+                Anim.speed = 1f;
             }
         }
     }

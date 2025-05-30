@@ -17,6 +17,10 @@ public class AxeAttack : MonoBehaviour
         AxeLightHitbox = transform.Find("AxeLightHitbox").GetComponent<BoxCollider2D>();
         AxeHeavyHitbox = transform.Find("AxeHeavyHitbox").GetComponent<BoxCollider2D>();
         AxeKickHitbox = transform.Find("AxeKickHitbox").GetComponent<BoxCollider2D>();
+    }
+
+    void Start()
+    {
         Anim.SetBool("IsAttacking", false);
     }
 
@@ -47,7 +51,6 @@ public class AxeAttack : MonoBehaviour
         }
         else if (Anim.GetCurrentAnimatorStateInfo(0).IsName("AxeLight"))
         {
-            print("here");
             if (Input.GetMouseButtonDown(1))
             {
                 ComboQueued = true;

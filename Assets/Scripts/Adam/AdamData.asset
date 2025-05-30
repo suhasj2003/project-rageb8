@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f1ca15fda43474c8bfe5572c368b01, type: 3}
   m_Name: AdamData
   m_EditorClassIdentifier: 
-  MaxHP: 100
+  MaxHP: 20
