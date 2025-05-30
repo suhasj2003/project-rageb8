@@ -9,9 +9,11 @@ public class DodgeRoll : MonoBehaviour
 
     private float RollTimer = 0f;
     private Vector2 RollDirection;
+    private float lastRollTime;
 
     private PlayerMovement PM;
     private Rigidbody2D Body;
+    private BoxCollider2D Hitbox;
     private Animator Anim;
     private SpriteRenderer SpriteRenderer;
 
@@ -19,7 +21,7 @@ public class DodgeRoll : MonoBehaviour
     {
         Anim = GetComponent<Animator>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
-
+        Hitbox = GetComponent<BoxCollider2D>();
         if (PM == null)
         {
             PM = FindFirstObjectByType<PlayerMovement>();
@@ -36,7 +38,7 @@ public class DodgeRoll : MonoBehaviour
 
         if (Anim.GetBool("IsRolling")) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && (Time.time - lastRollTime > m_PostRollCooldown))
         {
             Roll();
         }
@@ -65,7 +67,8 @@ public class DodgeRoll : MonoBehaviour
         Anim.SetBool("IsRolling", false);
         Body.linearVelocity = Vector2.zero;
         Body.gravityScale = PM.m_GravityScale;
-        Invoke(nameof(ResetControl), m_PostRollCooldown);
+        ResetControl();
+        lastRollTime = Time.time;
     }
 
     private void ResetControl()
@@ -89,5 +92,14 @@ public class DodgeRoll : MonoBehaviour
     {
         return Mathf.Abs(transform.eulerAngles.y - 180) < 0.1f ? -1 : 1;
     }
-  
+    
+    private void DisableHitbox()
+    {
+        Hitbox.enabled = false;
+    }
+
+    private void EnableHitbox()
+    {
+        Hitbox.enabled = true;
+    }
 }

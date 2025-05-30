@@ -8,6 +8,13 @@ public class EnemyHealth : MonoBehaviour
     public Flash Flash;
     public HitStop HitStop;
 
+    private Animator Anim;
+
+    void Awake()
+    {
+        Anim = GetComponent<Animator>();
+    }
+
     void Start()
     {
         CurrentHealth = EnemyData.MaxHP;
@@ -18,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
         //Debug.Log("Enemy Took damage");
         CurrentHealth -= Amount;
 
-        Flash.SpriteFlash();
+        Flash.SpriteFlicker();
         HitStop.DoHitStop();
 
         if (CurrentHealth <= 0)
@@ -28,6 +35,12 @@ public class EnemyHealth : MonoBehaviour
     }
 
     private void Die()
+    {
+        Anim.SetTrigger("Dead");
+        Anim.SetBool("IsDead", true);
+    }
+
+    private void OnDeathDestroy()
     {
         Destroy(gameObject);
     }

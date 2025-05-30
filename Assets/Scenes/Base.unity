@@ -1637,7 +1637,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6666667, y: 0}
     oldSize: {x: 0.27, y: 0.31}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.27, y: 0.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1654,7 +1654,7 @@ Animator:
   m_GameObject: {fileID: 1394415425}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e44afd638beb13d4983f9e192538c9cc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ba5520f78665bc41b2d245b271cacc4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1710,12 +1710,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -8889998678665339677, guid: 5ad2e037ad006cf4fb854c0f5ba5dae5, type: 3}
+  m_Sprite: {fileID: -8889998678665339677, guid: 76dfaeb38a25188448aa008bfd87c719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.27, y: 0.31}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1781,8 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40116e00cd2fd2c4d88ed1640f52bb97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 1394415428}
-  HitStopDuration: 0.07
+  m_HitStopDuration: 0.07
 --- !u!114 &1394415434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,9 +1794,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8a1c178eb90b04caad335c3114a677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteRenderer: {fileID: 1394415429}
-  FlashColor: {r: 1, g: 0, b: 0, a: 1}
-  FlashDuration: 0.08
+  m_FlickerDuration: 0.5
+  m_FlickerCount: 5
+  FlickerColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1510597001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2055,6 @@ MonoBehaviour:
   m_GravityScale: 5
   m_FallMultiplier: 1
   m_LowJumpMultiplier: 2
-  m_GroundCheck: {fileID: 1673861284}
   m_GroundLayer:
     serializedVersion: 2
     m_Bits: 192
@@ -2263,7 +2261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RollDuration: 0.4
   m_RollSpeed: 10
-  m_PostRollCooldown: 0
+  m_PostRollCooldown: 0.2
 --- !u!114 &1854372956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,8 +2278,8 @@ MonoBehaviour:
   HealthSlider: {fileID: 1241240038}
   KnockbackForce: 10
   KnockbackDuration: 0.3
-  Flash: {fileID: 1854372958}
-  HitStop: {fileID: 1854372957}
+  m_Flash: {fileID: 1854372958}
+  m_HitStop: {fileID: 1854372957}
 --- !u!114 &1854372957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,8 +2292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40116e00cd2fd2c4d88ed1640f52bb97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 1854372953}
-  HitStopDuration: 0.2
+  m_HitStopDuration: 0.07
 --- !u!114 &1854372958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,9 +2305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8a1c178eb90b04caad335c3114a677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteRenderer: {fileID: 1854372950}
-  FlashColor: {r: 0.9433962, g: 0.4995727, b: 0.30704877, a: 1}
-  FlashDuration: 0.08
+  m_FlickerDuration: 0.5
+  m_FlickerCount: 5
+  FlickerColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1939778704
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ public class AxeHitbox : MonoBehaviour
 {
     public AttackData AttackData;
     private float LastHitTime;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (Time.time - LastHitTime < AttackData.AttackCooldown) return;

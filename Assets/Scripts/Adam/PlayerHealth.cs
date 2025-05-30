@@ -15,20 +15,27 @@ public class PlayerHealth : MonoBehaviour
     public float KnockbackDuration = 0.3f;
 
     [Header("HitEffect")]
-    public Flash Flash;
-    public HitStop HitStop;
+    public Flash m_Flash;
+    public HitStop m_HitStop;
 
-    private Rigidbody2D Body;
     private bool IsKnockbackActive = false;
     private float KnockbackTimer = 0f;
     private Vector2 KnockbackVelocity;
 
+    private Rigidbody2D Body;
+    private Animator Anim;
+
     void Awake()
+    { 
+        Body = GetComponent<Rigidbody2D>();
+        Anim = GetComponent<Animator>();
+    }
+
+    void Start()
     {
         CurrentHealth = PlayerData.MaxHP;
         HealthSlider.maxValue = PlayerData.MaxHP;
         HealthSlider.value = CurrentHealth;
-        Body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -60,8 +67,8 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
 
-        Flash.SpriteFlash();
-        HitStop.DoHitStop();
+        m_Flash.SpriteFlicker();
+        m_HitStop.DoHitStop();
     }
 
     public void ApplyKnockback(Vector3 AttackerPosition)
@@ -86,6 +93,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        Anim.SetTrigger("Dead");
+        //Destroy(gameObject);
     }
 }

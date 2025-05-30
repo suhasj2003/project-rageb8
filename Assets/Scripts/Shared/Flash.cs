@@ -2,37 +2,50 @@ using UnityEngine;
 
 public class Flash : MonoBehaviour
 {
-    public SpriteRenderer SpriteRenderer;
-    public Color FlashColor = Color.red;
-    public float FlashDuration = 0.08f; // About 5 frames at 60fps
+    
+    public float m_FlickerDuration = 0.5f; 
+    public int m_FlickerCount = 5;
+    public Color FlickerColor = Color.red;
+
+    private float FlickerTimer;
+    private int FlickersDone;
+    private bool IsFlickering = false;
 
     private Color OriginalColor;
-    private float FlashTimer = 0f;
-    private bool IsFlashing = false;
+
+    private SpriteRenderer SpriteRenderer;
 
     void Awake()
     {
-        if (SpriteRenderer == null)
-            SpriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
         OriginalColor = SpriteRenderer.color;
     }
 
-    public void SpriteFlash()
+    public void SpriteFlicker()
     {
-        SpriteRenderer.color = FlashColor;
-        FlashTimer = FlashDuration;
-        IsFlashing = true;
+        IsFlickering = true;
+        FlickerTimer = m_FlickerDuration / (m_FlickerCount * 2f);
+        FlickersDone = 0;
+        SpriteRenderer.enabled = false;
+        SpriteRenderer.color = FlickerColor;
     }
 
     void Update()
     {
-        if (IsFlashing)
+        if (!IsFlickering) return;
+
+        FlickerTimer -= Time.deltaTime;
+        if (FlickerTimer <= 0f)
         {
-            FlashTimer -= Time.deltaTime;
-            if (FlashTimer <= 0f)
+            SpriteRenderer.enabled = !SpriteRenderer.enabled;
+            FlickersDone++;
+            FlickerTimer = m_FlickerDuration / (m_FlickerCount * 2f);
+
+            if (FlickersDone >= m_FlickerCount * 2)
             {
-                SpriteRenderer.color = OriginalColor;
-                IsFlashing = false;
+                IsFlickering = false;
+                SpriteRenderer.enabled = true; 
+                SpriteRenderer.color = OriginalColor; 
             }
         }
     }
