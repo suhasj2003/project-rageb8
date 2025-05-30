@@ -7,7 +7,7 @@ public class CameraManager : MonoBehaviour
 {
     public static CameraManager Instance;
 
-    [SerializeField] private CinemachineVirtualCamera[] _virtualCameras;
+    [SerializeField] private CinemachineCamera[] _virtualCameras;
 
     [Header("Y Damping player jump/fall")]
     [SerializeField] private float _fallPanAmount = 0.25f;
@@ -19,7 +19,7 @@ public class CameraManager : MonoBehaviour
 
     private Coroutine _lerpYPanCoroutine;
 
-    private CinemachineVirtualCamera _currentCamera;
+    private CinemachineCamera _currentCamera;
     private CinemachinePositionComposer _positionComposer;
 
     private float _normYPanAmount;
@@ -36,7 +36,7 @@ public class CameraManager : MonoBehaviour
             if (_virtualCameras[i].enabled)
             {
                 _currentCamera = _virtualCameras[i];
-                _positionComposer = _currentCamera.GetCinemachineComponent<CinemachinePositionComposer>();
+                _positionComposer = _currentCamera.GetComponent<CinemachinePositionComposer>();
 
             }
         }
