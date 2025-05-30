@@ -2,20 +2,30 @@ using UnityEngine;
 
 public class DodgeRoll : MonoBehaviour
 {
-    public PlayerMovement PM;
-
-    private float RollTimer = 0f;
-    public float RollDuration = 0.4f;
-    public float RollSpeed = 10f;
-    private Vector2 RollDirection;
-
+    [Header("Roll")]
+    public float m_RollDuration = 0.4f;
+    public float m_RollSpeed = 10f;
     public float m_PostRollCooldown = 1f;
 
+    private float RollTimer = 0f;
+    private Vector2 RollDirection;
+
+    private PlayerMovement PM;
+    private Rigidbody2D Body;
     private Animator Anim;
+    private SpriteRenderer SpriteRenderer;
 
     void Awake()
     {
         Anim = GetComponent<Animator>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (PM == null)
+        {
+            PM = FindFirstObjectByType<PlayerMovement>();
+        }
+
+        Body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -24,7 +34,7 @@ public class DodgeRoll : MonoBehaviour
 
         HandleRollMovement();
 
-        if (PM.m_IsRolling) return;
+        if (Anim.GetBool("IsRolling")) return;
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
@@ -34,47 +44,50 @@ public class DodgeRoll : MonoBehaviour
 
     public void Roll()
     {
-        if (!PM.m_IsRolling && PM.IsGrounded())
+        if (!Anim.GetBool("IsRolling") && PM.IsGrounded())
         {
-            PM.m_IsRolling = true;
-            RollTimer = RollDuration;
-            RollDirection = new Vector2(Mathf.Sign(transform.localScale.x), 0);
+            RollTimer = m_RollDuration;
+            RollDirection = new Vector2(GetFacingDirection(), 0);
             Anim.SetTrigger("Roll");
             Anim.SetBool("IsRolling", true);
-            PM.m_CanMove = false;
+            Anim.SetBool("CanMove", false);
         }
     }
 
     public void RollBurstMove()
     {
-        float direction = Mathf.Sign(transform.localScale.x);
-        PM.m_Body.linearVelocity = new Vector2(direction * RollSpeed, PM.m_Body.linearVelocity.y);
+        float Direction = Mathf.Sign(transform.localScale.x);
+        Body.linearVelocity = new Vector2(Direction * m_RollSpeed, Body.linearVelocity.y);
     }
 
     private void EndRoll()
     {
-        PM.m_IsRolling = false;
         Anim.SetBool("IsRolling", false);
-        PM.m_Body.linearVelocity = Vector2.zero;
-        PM.m_Body.gravityScale = PM.m_GravityScale;
+        Body.linearVelocity = Vector2.zero;
+        Body.gravityScale = PM.m_GravityScale;
         Invoke(nameof(ResetControl), m_PostRollCooldown);
     }
 
     private void ResetControl()
     {
-        PM.m_CanMove = true;
+        Anim.SetBool("CanMove", true);
     }
 
     private void HandleRollMovement()
     {
-        if (!PM.m_IsRolling) return;
+        if (!Anim.GetBool("IsRolling")) return;
 
         RollTimer -= Time.deltaTime;
 
         if (RollTimer > 0)
         {
-            PM.m_Body.linearVelocity = RollDirection * RollSpeed;
-            PM.m_Body.gravityScale = 0;
+            Body.linearVelocity = RollDirection * m_RollSpeed;
+            Body.gravityScale = 0;
         }
     }
+    public int GetFacingDirection()
+    {
+        return Mathf.Abs(transform.eulerAngles.y - 180) < 0.1f ? -1 : 1;
+    }
+  
 }
