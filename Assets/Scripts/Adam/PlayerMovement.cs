@@ -150,11 +150,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateGravity()
     {
-        if (Body.linearVelocity.y < 0)
+        if (Body.linearVelocity.y < -0.1f)
         {
             Body.gravityScale = m_GravityScale * m_FallMultiplier;
         }
-        else if (Body.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        else if (Body.linearVelocity.y > 0.1f && !Input.GetKey(KeyCode.Space))
         {
             Body.gravityScale = m_GravityScale * m_LowJumpMultiplier;
         }
