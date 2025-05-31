@@ -10,13 +10,13 @@ public class PlayerMovement : MonoBehaviour
     public float m_GravityScale = 5f;
     public float m_FallMultiplier = 2.5f;
     public float m_LowJumpMultiplier = 2f;
-    
+
     public LayerMask m_GroundLayer;
     public LayerMask m_WallLayer;
 
     [Header("Wall Sliding")]
-    public float m_WallSlideSpeed = 2f;  
-    public float m_WallSlideGravity = 1f; 
+    public float m_WallSlideSpeed = 2f;
+    public float m_WallSlideGravity = 1f;
     public float m_WallJumpHorizontalForce = 8f;
     public float m_WallJumpVerticalForce = 15f;
 
@@ -46,31 +46,49 @@ public class PlayerMovement : MonoBehaviour
         BoxCollider = GetComponent<BoxCollider2D>();
         Anim = GetComponent<Animator>();
         PlayerObject = GameObject.Find("Player");
-        GroundCheck = gameObject.transform.Find("GroundCheck");
+        //GroundCheck = gameObject.transform.Find("GroundCheck");
 
-        
+        GroundCheck = GetOrCreateGroundCheck("GroundCheck", new Vector3(0f, 0f, 0f), Vector3.one);
     }
+
+    private Transform GetOrCreateGroundCheck(string GroundCheckName, Vector3 LocalPosition, Vector3 LocalScale)
+    {
+        Transform GroundCheck = gameObject.transform.Find(GroundCheckName);
+        if (GroundCheck == null)
+        {
+            GameObject GroundCheckObject = new GameObject(GroundCheckName);
+            GroundCheckObject.transform.SetParent(transform);
+            GroundCheckObject.transform.localPosition = LocalPosition;
+            GroundCheckObject.transform.localRotation = Quaternion.identity;
+            GroundCheckObject.transform.localScale = LocalScale;
+            return GroundCheckObject.transform;
+        }
+        else
+        {
+            return GroundCheck;
+        }
+    }
+
     void Start()
     {
         Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         Anim.SetBool("CanMove", true);
         //Time.timeScale = 0.5f;
 
-        _fallSpeedYDampingChangeThreshold = CameraManager.Instance.FallSpeedYDampingChangeThreshold;
+        //_fallSpeedYDampingChangeThreshold = CameraManager.Instance.FallSpeedYDampingChangeThreshold;
     }
 
     void Update()
     {
         Anim.SetBool("IsGrounded", IsGrounded());
-        
 
-        if (!Anim.GetBool("CanMove") || 
-            Anim.GetBool("IsAttacking") || 
+
+        if (!Anim.GetBool("CanMove") ||
+            Anim.GetBool("IsAttacking") ||
             Anim.GetBool("IsRolling")) return;
 
         MoveInput = Input.GetAxis("Horizontal");
-        
-        Anim.SetBool("IsRunning", MoveInput != 0);
+
         Anim.SetBool("IsWallSliding", OnWall() && !IsGrounded() && Body.linearVelocity.y < 0);
 
 
@@ -87,12 +105,13 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (WallJumpCooldown > 1f)
         {
+            Anim.SetBool("IsRunning", Anim.GetBool("IsGrounded") && MoveInput != 0);
             Body.linearVelocity = new Vector2(MoveInput * m_Speed, Body.linearVelocity.y);
             Body.gravityScale = m_GravityScale;
         }
 
         UpdatePlayerFacing();
-        
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
@@ -107,20 +126,20 @@ public class PlayerMovement : MonoBehaviour
         WasGroundedLastFrame = IsGrounded();
         WasWallSlidingLastFrame = Anim.GetBool("IsWallSliding");
 
-        if (Body.linearVelocity.y < _fallSpeedYDampingChangeThreshold &&
-        !CameraManager.Instance.IsLerpingYDamping &&
-        !CameraManager.Instance.LerpredFromPlayerFalling)
-        {
-            CameraManager.Instance.LerpYDamping(true);
-        }
+        //if (Body.linearVelocity.y < _fallSpeedYDampingChangeThreshold &&
+        //    !CameraManager.Instance.IsLerpingYDamping &&
+        //    !CameraManager.Instance.LerpredFromPlayerFalling)
+        //{
+        //    CameraManager.Instance.LerpYDamping(true);
+        //}
 
-        if (Body.linearVelocity.y >= 0f &&
-            !CameraManager.Instance.IsLerpingYDamping &&
-            CameraManager.Instance.LerpredFromPlayerFalling)
-        {
-            CameraManager.Instance.LerpredFromPlayerFalling = false;
-            CameraManager.Instance.LerpYDamping(false);
-        }
+        //if (Body.linearVelocity.y >= 0f &&
+        //    !CameraManager.Instance.IsLerpingYDamping &&
+        //    CameraManager.Instance.LerpredFromPlayerFalling)
+        //{
+        //    CameraManager.Instance.LerpredFromPlayerFalling = false;
+        //    CameraManager.Instance.LerpYDamping(false);
+        //}
     }
 
     private void Flip(float Value)
@@ -136,9 +155,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void UpdatePlayerFacing() 
+    private void UpdatePlayerFacing()
     {
-        if (Anim.GetBool("IsWallSliding") || JustWallJumped){ return; }
+        if (Anim.GetBool("IsWallSliding") || JustWallJumped) { return; }
 
         Flip(MoveInput);
 
@@ -150,7 +169,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateGravity()
     {
-        if (Body.linearVelocity.y < -0.1f)
+        if (Body.linearVelocity.y < 0.1f)
         {
             Body.gravityScale = m_GravityScale * m_FallMultiplier;
         }
@@ -171,21 +190,27 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void HandleWallJump()
-    {
+    { 
+
+        Anim.SetBool("IsWallSliding", false);        
         Anim.SetTrigger("WallJump");
+        //Invoke("OnWallJumpFlip", 0.2f);
     }
 
-    private void OnWallJumpFlip()
+    private void HandleWallJumpPhysics()
     {
-        float pushDirection = -Mathf.Sign(transform.localScale.x);
-        Body.linearVelocity = new Vector2(
-            pushDirection * m_WallJumpHorizontalForce,
-            m_WallJumpVerticalForce
-        );
+        float wallDirection = GetFacingDirection();
+        print(wallDirection);
+        //Body.linearVelocity = new Vector2(
+        //    wallDirection * m_WallJumpHorizontalForce,
+        //    m_WallJumpVerticalForce
+        //);
 
-        Flip(pushDirection);
+        print(Body.linearVelocity);
+        Body.linearVelocity = new Vector2(-wallDirection * m_WallJumpHorizontalForce, m_WallJumpVerticalForce);
+        print(Body.linearVelocity);
+        Flip(-wallDirection);
 
-        Anim.SetBool("IsWallSliding", false);
         WallJumpCooldown = 0;
         JustWallJumped = true;
     }
@@ -210,7 +235,7 @@ public class PlayerMovement : MonoBehaviour
     public bool OnWall()
     {
         float CastDistance = 0.1f;
-        Vector2 CastDirection = new Vector2(transform.localScale.x, 0); 
+        Vector2 CastDirection = new Vector2(GetFacingDirection(), 0);
 
         RaycastHit2D Hit = Physics2D.BoxCast(
             BoxCollider.bounds.center,
@@ -223,7 +248,7 @@ public class PlayerMovement : MonoBehaviour
         return Hit.collider != null;
     }
 
-    public int GetFacingDirection()
+    private int GetFacingDirection()
     {
         return Mathf.Abs(transform.eulerAngles.y - 180) < 0.1f ? -1 : 1;
     }

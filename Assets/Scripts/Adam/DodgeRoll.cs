@@ -88,7 +88,7 @@ public class DodgeRoll : MonoBehaviour
             Body.gravityScale = 0;
         }
     }
-    public int GetFacingDirection()
+    private int GetFacingDirection()
     {
         return Mathf.Abs(transform.eulerAngles.y - 180) < 0.1f ? -1 : 1;
     }
