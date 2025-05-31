@@ -9,10 +9,12 @@ public class EnemyHealth : MonoBehaviour
     public HitStop HitStop;
 
     private Animator Anim;
+    private BoxCollider2D Body;
 
     void Awake()
     {
         Anim = GetComponent<Animator>();
+        Body = GetComponent<BoxCollider2D>();
     }
 
     void Start()
@@ -36,8 +38,10 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        Body.enabled = false;
         Anim.SetTrigger("Dead");
         Anim.SetBool("IsDead", true);
+        Anim.SetBool("CanMove", false);
     }
 
     private void OnDeathDestroy()

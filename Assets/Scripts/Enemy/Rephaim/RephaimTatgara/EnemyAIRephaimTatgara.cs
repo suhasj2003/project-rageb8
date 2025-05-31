@@ -1,27 +1,36 @@
 using UnityEngine;
 
-public class EnemyAIDemon : MonoBehaviour
+public class EnemyAIRephaimTatgara : MonoBehaviour
 {
     public EnemyData EnemyData;
-    public Transform Player;
-    public BoxCollider2D AttackHitbox;
 
-    public Rigidbody2D Body;
-    private Animator Anim;
     private float LastAttackTime;
     private bool IsAttacking = false;
+
+    private BoxCollider2D AttackHitbox;
+    private Rigidbody2D Body;
+    private Animator Anim;
+    private Transform Player;
 
     void Awake()
     {
         Body = GetComponent<Rigidbody2D>();
         Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         Anim = GetComponent<Animator>();
+        
+        AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
+        Player = GameObject.FindWithTag("Player").transform;
+    }
+
+    void Start()
+    {
         AttackHitbox.gameObject.SetActive(false);
+        Anim.SetBool("CanMove", true);
     }
 
     void Update()
     {
-        if (Player == null) return;
+        if (Player == null || !Anim.GetBool("CanMove")) return;
 
         float Distance = Vector2.Distance(transform.position, Player.position);
 

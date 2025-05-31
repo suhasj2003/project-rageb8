@@ -94,6 +94,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Anim.SetTrigger("Dead");
+        Anim.SetBool("CanMove", false);
         //Destroy(gameObject);
     }
 }
