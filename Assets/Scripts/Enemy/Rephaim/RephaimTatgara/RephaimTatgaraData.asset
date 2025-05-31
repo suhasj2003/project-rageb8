@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f486ee840f79842bb1442471d2fef0, type: 3}
-  m_Name: DemonMelee
+  m_Name: RephaimTatgaraData
   m_EditorClassIdentifier: 
   MaxHP: 100
   MoveSpeed: 2
