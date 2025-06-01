@@ -5,7 +5,6 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
     public EnemyData EnemyData;
 
     private float LastAttackTime;
-    private bool IsAttacking = false;
 
     private BoxCollider2D AttackHitbox;
     private Rigidbody2D Body;
@@ -15,7 +14,8 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
     void Awake()
     {
         Body = GetComponent<Rigidbody2D>();
-        Body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        Body.constraints = RigidbodyConstraints2D.FreezeRotation | 
+            RigidbodyConstraints2D.FreezePositionX;
         Anim = GetComponent<Animator>();
         
         AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
@@ -30,36 +30,32 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
 
     void Update()
     {
-        if (Player == null || !Anim.GetBool("CanMove")) return;
+        if (Player == null || !Anim.GetBool("CanMove") || Anim.GetBool("IsAttacking")) return;
 
         float Distance = Vector2.Distance(transform.position, Player.position);
 
-        // Chase if not in attack range
-        if (Distance > EnemyData.AttackRange && !IsAttacking)
+        if (Distance > EnemyData.AttackRange)
         {
-            Anim.SetBool("IsAttacking", false);
-            Anim.SetBool("IsWalking", true);
-            Vector2 dir = (Player.position - transform.position).normalized;
-            transform.position += (Vector3)dir * EnemyData.MoveSpeed * Time.deltaTime;
+            float dirX = Player.position.x - transform.position.x;
+            Vector3 move = new Vector3(Mathf.Sign(dirX) * EnemyData.MoveSpeed * Time.deltaTime, 0, 0);
+            transform.position += move;
 
-            if (dir.x != 0)
-                transform.localScale = new Vector3(Mathf.Sign(dir.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
+            if (dirX != 0)
+                transform.localScale = new Vector3(Mathf.Sign(dirX) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
         }
-        else
+        else if (Time.time >= LastAttackTime + EnemyData.AttackCooldown)
         {
-            Anim.SetBool("IsWalking", false);
-
-            if (Time.time >= LastAttackTime + EnemyData.AttackCooldown && !Anim.GetBool("IsAttacking"))
-            {
-                StartAttack();
-            }
+            StartAttack();
         }
     }
 
     void StartAttack()
     {
-        Anim.SetBool("IsAttacking", true);
+        print("here");
         Anim.SetTrigger("Attack");
+        Anim.SetBool("IsAttacking", true);
+        Anim.SetBool("IsWalking", false);
+        Anim.SetBool("CanMove", false);
         LastAttackTime = Time.time;
     }
 
@@ -76,5 +72,6 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
     void EndAttack()
     {
         Anim.SetBool("IsAttacking", false);
+        Anim.SetBool("CanMove", true);
     }
 }

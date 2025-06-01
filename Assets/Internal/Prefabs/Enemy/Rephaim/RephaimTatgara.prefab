@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4948511544986794372}
   - component: {fileID: 8750098614754694351}
   - component: {fileID: 2536130638132244443}
+  - component: {fileID: 3488799851842056828}
   - component: {fileID: 5799193816245430240}
   - component: {fileID: 6510031031896858524}
   m_Layer: 0
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 1778391513573527583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: -2.14, z: 0}
+  m_LocalPosition: {x: -1.75, y: -1.9, z: 0}
   m_LocalScale: {x: 5, y: 5.0108, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -152,7 +153,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.003613174, y: 0.1304186}
+  m_Offset: {x: 0.003613174, y: 0.15578027}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6666667, y: 0}
@@ -162,7 +163,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.13353196, y: 0.26055193}
+  m_Size: {x: 0.13353196, y: 0.31127527}
   m_EdgeRadius: 0
 --- !u!50 &4948511544986794372
 Rigidbody2D:
@@ -217,6 +218,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyData: {fileID: 11400000, guid: 1b5514924b75a2e408ddf8e26605f44f, type: 2}
+--- !u!114 &3488799851842056828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778391513573527583}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13100d63fb858e46a4f6aad8d2d32db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageAmount: 5
 --- !u!114 &5799193816245430240
 MonoBehaviour:
   m_ObjectHideFlags: 0
