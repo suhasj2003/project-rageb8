@@ -17,11 +17,9 @@ public class AxeHitbox : MonoBehaviour
         EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
-            enemy.TakeDamage(20);
-            Debug.Log("Dealt 20 damage to enemy!");
+            enemy.TakeDamage(AttackData.Damage);
+            Debug.Log("Dealt" + AttackData.Damage + "damage to enemy!");
             LastHitTime = Time.time;
         }
-
-        
     }
 }

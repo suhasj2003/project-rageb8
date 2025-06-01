@@ -14,40 +14,9 @@ public class AxeAttack : MonoBehaviour
     void Awake()
     {
         Anim = GetComponent<Animator>();
-        //AxeLightHitbox = transform.Find("AxeLightHitbox").GetComponent<BoxCollider2D>();
-        //AxeHeavyHitbox = transform.Find("AxeHeavyHitbox").GetComponent<BoxCollider2D>();
-        //AxeKickHitbox = transform.Find("AxeKickHitbox").GetComponent<BoxCollider2D>();
-        AxeLightHitbox = GetOrCreateHitbox("AxeLightHitbox", new Vector2(0.2294476f, 0.1600381f), new Vector2(0.4411201f, 0.3198087f));
-        AxeHeavyHitbox = GetOrCreateHitbox("AxeHeavyHitbox", new Vector2(0.2294476f, 0.1600381f), new Vector2(0.4411201f, 0.3198087f));
-        AxeKickHitbox = GetOrCreateHitbox("AxeKickHitbox", new Vector2(0.139194f, 0.0899035f), new Vector2(0.382016f, 0.1380965f));
-    }
-
-    private BoxCollider2D GetOrCreateHitbox(string HitboxName, Vector2 Offset, Vector2 Size)
-    {
-        Transform HitboxTransform = transform.Find(HitboxName);
-
-        if (HitboxTransform == null)
-        {
-            GameObject HitboxObject = new GameObject(HitboxName);
-            HitboxObject.transform.SetParent(transform);
-            HitboxObject.transform.localPosition = Vector3.zero;
-            HitboxObject.transform.localRotation = Quaternion.identity;
-            HitboxObject.transform.localScale = Vector3.one;
-
-            BoxCollider2D HitboxCollider = HitboxObject.AddComponent<BoxCollider2D>();
-            HitboxCollider.isTrigger = true;
-            HitboxCollider.offset = Offset;
-            HitboxCollider.size = Size;
-            HitboxCollider.edgeRadius = 0f;
-
-            HitboxObject.SetActive(false);
-
-            return HitboxCollider;
-        }
-        else
-        {
-            return HitboxTransform.GetComponent<BoxCollider2D>();
-        }
+        AxeLightHitbox = transform.Find("AxeLightHitbox").GetComponent<BoxCollider2D>();
+        AxeHeavyHitbox = transform.Find("AxeHeavyHitbox").GetComponent<BoxCollider2D>();
+        AxeKickHitbox = transform.Find("AxeKickHitbox").GetComponent<BoxCollider2D>();
     }
 
     void Start()
