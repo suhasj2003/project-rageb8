@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5799193816245430240}
   - component: {fileID: 6510031031896858524}
   m_Layer: 0
-  m_Name: Demon
+  m_Name: RephaimTatgara
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1778391513573527583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.72, y: -2.16, z: 0}
+  m_LocalPosition: {x: -1.28, y: -2.14, z: 0}
   m_LocalScale: {x: 5, y: 5.0108, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -204,9 +204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyData: {fileID: 11400000, guid: 1b5514924b75a2e408ddf8e26605f44f, type: 2}
-  Player: {fileID: 0}
-  AttackHitbox: {fileID: 6964231366122884564}
-  Body: {fileID: 4948511544986794372}
 --- !u!114 &2536130638132244443
 MonoBehaviour:
   m_ObjectHideFlags: 0
