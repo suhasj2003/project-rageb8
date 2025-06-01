@@ -1,0 +1,3822 @@
+fileFormatVersion: 2
+guid: 81fa33c194a9e3e48ad5b238c3c8e4a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7583353446978958349
+    second: TX_Village_Props_0
+  - first:
+      213: 3577400556300146537
+    second: TX_Village_Props_1
+  - first:
+      213: 4372918612368980680
+    second: TX_Village_Props_2
+  - first:
+      213: -4807020512244921901
+    second: TX_Village_Props_3
+  - first:
+      213: -2371652494465081255
+    second: TX_Village_Props_4
+  - first:
+      213: 3284408537935008118
+    second: TX_Village_Props_5
+  - first:
+      213: 6618858132182772940
+    second: TX_Village_Props_6
+  - first:
+      213: -2422601406703568875
+    second: TX_Village_Props_7
+  - first:
+      213: -4241887142234023366
+    second: TX_Village_Props_8
+  - first:
+      213: -8404321348910949076
+    second: TX_Village_Props_9
+  - first:
+      213: 7008387000296289757
+    second: TX_Village_Props_10
+  - first:
+      213: 3666221498970100853
+    second: TX_Village_Props_11
+  - first:
+      213: 1154610141081163297
+    second: TX_Village_Props_12
+  - first:
+      213: 9207883002992362044
+    second: TX_Village_Props_13
+  - first:
+      213: 6029396332428649917
+    second: TX_Village_Props_14
+  - first:
+      213: -7384185706813516911
+    second: TX_Village_Props_15
+  - first:
+      213: -7064029662580363625
+    second: TX_Village_Props_16
+  - first:
+      213: 1727728816432667396
+    second: TX_Village_Props_17
+  - first:
+      213: 7497325152058061119
+    second: TX_Village_Props_18
+  - first:
+      213: 1007524082461152741
+    second: TX_Village_Props_19
+  - first:
+      213: -5552413063064394872
+    second: TX_Village_Props_20
+  - first:
+      213: 5775026928670906440
+    second: TX_Village_Props_21
+  - first:
+      213: 2055834217071048240
+    second: TX_Village_Props_22
+  - first:
+      213: -105779868249256566
+    second: TX_Village_Props_23
+  - first:
+      213: 6127188245866154732
+    second: TX_Village_Props_24
+  - first:
+      213: 1017187732221907171
+    second: TX_Village_Props_25
+  - first:
+      213: 5020429641484424180
+    second: TX_Village_Props_26
+  - first:
+      213: -8123964934220985259
+    second: TX_Village_Props_27
+  - first:
+      213: -3202356093075761077
+    second: TX_Village_Props_28
+  - first:
+      213: 8155867036800971193
+    second: TX_Village_Props_29
+  - first:
+      213: 9188790449876889520
+    second: TX_Village_Props_30
+  - first:
+      213: -6591409681778066957
+    second: TX_Village_Props_31
+  - first:
+      213: -3316608292436175506
+    second: TX_Village_Props_32
+  - first:
+      213: -4451334817619487975
+    second: TX_Village_Props_33
+  - first:
+      213: 5874891447412900232
+    second: TX_Village_Props_34
+  - first:
+      213: -6999438615934051253
+    second: TX_Village_Props_35
+  - first:
+      213: 4934566744574665396
+    second: TX_Village_Props_36
+  - first:
+      213: 3593212249488147201
+    second: TX_Village_Props_37
+  - first:
+      213: 9183310535335010884
+    second: TX_Village_Props_38
+  - first:
+      213: 112227140377509385
+    second: TX_Village_Props_39
+  - first:
+      213: -6141188294182606861
+    second: TX_Village_Props_40
+  - first:
+      213: 3686980251744132730
+    second: TX_Village_Props_41
+  - first:
+      213: 4397881650250628019
+    second: TX_Village_Props_42
+  - first:
+      213: -4516129296795046030
+    second: TX_Village_Props_43
+  - first:
+      213: 1384770763275055181
+    second: TX_Village_Props_44
+  - first:
+      213: -2481013418862026491
+    second: TX_Village_Props_45
+  - first:
+      213: 6853948742777983679
+    second: TX_Village_Props_46
+  - first:
+      213: -2550023583142319564
+    second: TX_Village_Props_47
+  - first:
+      213: -5743835301466892842
+    second: TX_Village_Props_48
+  - first:
+      213: -8493725095223889846
+    second: TX_Village_Props_49
+  - first:
+      213: 4994388155814962751
+    second: TX_Village_Props_50
+  - first:
+      213: -4391907023530454200
+    second: TX_Village_Props_51
+  - first:
+      213: -3646621856560370693
+    second: TX_Village_Props_52
+  - first:
+      213: -731324623051799477
+    second: TX_Village_Props_53
+  - first:
+      213: -1724807573090152085
+    second: TX_Village_Props_54
+  - first:
+      213: -1637628174758946464
+    second: TX_Village_Props_55
+  - first:
+      213: 5251389689408937040
+    second: TX_Village_Props_56
+  - first:
+      213: 9158182546808460158
+    second: TX_Village_Props_57
+  - first:
+      213: 1436224314635267206
+    second: TX_Village_Props_58
+  - first:
+      213: 8572127229171300580
+    second: TX_Village_Props_59
+  - first:
+      213: 6874998029422827702
+    second: TX_Village_Props_60
+  - first:
+      213: -8989388120164170832
+    second: TX_Village_Props_61
+  - first:
+      213: 4199970429098865078
+    second: TX_Village_Props_62
+  - first:
+      213: -4726321541651600896
+    second: TX_Village_Props_63
+  - first:
+      213: 7726794126352545925
+    second: TX_Village_Props_64
+  - first:
+      213: 3102456672470838649
+    second: TX_Village_Props_65
+  - first:
+      213: -3301741587443189812
+    second: TX_Village_Props_66
+  - first:
+      213: 9057172547767836730
+    second: TX_Village_Props_67
+  - first:
+      213: 7249175366682818427
+    second: TX_Village_Props_68
+  - first:
+      213: -8620463119675438576
+    second: TX_Village_Props_69
+  - first:
+      213: -2548494925662551642
+    second: TX_Village_Props_70
+  - first:
+      213: -8079084610574617406
+    second: TX_Village_Props_71
+  - first:
+      213: 8885108607636100307
+    second: TX_Village_Props_72
+  - first:
+      213: 7053811975832375583
+    second: TX_Village_Props_73
+  - first:
+      213: -8220418966581919909
+    second: TX_Village_Props_74
+  - first:
+      213: 6537152923092812462
+    second: TX_Village_Props_75
+  - first:
+      213: -1931719060841966738
+    second: TX_Village_Props_76
+  - first:
+      213: 2539754529211198027
+    second: TX_Village_Props_77
+  - first:
+      213: 4048504829709334916
+    second: TX_Village_Props_78
+  - first:
+      213: -4165974844012715153
+    second: TX_Village_Props_79
+  - first:
+      213: -4770796749317787687
+    second: TX_Village_Props_80
+  - first:
+      213: -2277451683882924514
+    second: TX_Village_Props_81
+  - first:
+      213: 1118676390783427699
+    second: TX_Village_Props_82
+  - first:
+      213: -8763961200859043165
+    second: TX_Village_Props_83
+  - first:
+      213: 403379357164302061
+    second: TX_Village_Props_84
+  - first:
+      213: -4028459570615999811
+    second: TX_Village_Props_85
+  - first:
+      213: 5655295215315857015
+    second: TX_Village_Props_86
+  - first:
+      213: 8335836803676530115
+    second: TX_Village_Props_87
+  - first:
+      213: -6535405159868796269
+    second: TX_Village_Props_88
+  - first:
+      213: 3067212944801661245
+    second: TX_Village_Props_89
+  - first:
+      213: -5962048305595005101
+    second: TX_Village_Props_90
+  - first:
+      213: -3262295006811348692
+    second: TX_Village_Props_91
+  - first:
+      213: -3283751659191997783
+    second: TX_Village_Props_92
+  - first:
+      213: -5693339499159761183
+    second: TX_Village_Props_93
+  - first:
+      213: -2080379402459003378
+    second: TX_Village_Props_94
+  - first:
+      213: -305334222518864247
+    second: TX_Village_Props_95
+  - first:
+      213: 3539489722526110690
+    second: TX_Village_Props_96
+  - first:
+      213: -7647467179752801149
+    second: TX_Village_Props_97
+  - first:
+      213: 344235079016084161
+    second: TX_Village_Props_98
+  - first:
+      213: 9213493333562446466
+    second: TX_Village_Props_99
+  - first:
+      213: -284639125264091936
+    second: TX_Village_Props_100
+  - first:
+      213: 2624853454608928647
+    second: TX_Village_Props_101
+  - first:
+      213: 6449426087328385741
+    second: TX_Village_Props_102
+  - first:
+      213: -584792188270664256
+    second: TX_Village_Props_103
+  - first:
+      213: 7641730482220335750
+    second: TX_Village_Props_104
+  - first:
+      213: 6665906690735429330
+    second: TX_Village_Props_105
+  - first:
+      213: -6292332459985570123
+    second: TX_Village_Props_106
+  - first:
+      213: -8141684908302999597
+    second: TX_Village_Props_107
+  - first:
+      213: 4461801217371463562
+    second: TX_Village_Props_108
+  - first:
+      213: 8008995557918608625
+    second: TX_Village_Props_109
+  - first:
+      213: -1377037119842298729
+    second: TX_Village_Props_110
+  - first:
+      213: 4920966290842954211
+    second: TX_Village_Props_111
+  - first:
+      213: 8812195158893657684
+    second: TX_Village_Props_112
+  - first:
+      213: -1648768855810094368
+    second: TX_Village_Props_113
+  - first:
+      213: 6021937384835706465
+    second: TX_Village_Props_114
+  - first:
+      213: 6256388616947585713
+    second: TX_Village_Props_115
+  - first:
+      213: -8688899801953653914
+    second: TX_Village_Props_116
+  - first:
+      213: 7797097908909365450
+    second: TX_Village_Props_117
+  - first:
+      213: -9214232981656871115
+    second: TX_Village_Props_118
+  - first:
+      213: -5748933750418269296
+    second: TX_Village_Props_119
+  - first:
+      213: -8971895697493343741
+    second: TX_Village_Props_120
+  - first:
+      213: 4816221903100466200
+    second: TX_Village_Props_121
+  - first:
+      213: -3619271355372614200
+    second: TX_Village_Props_122
+  - first:
+      213: -8684325150559579608
+    second: TX_Village_Props_123
+  - first:
+      213: -8492277488736413272
+    second: TX_Village_Props_124
+  - first:
+      213: 2814433665178859022
+    second: TX_Village_Props_125
+  - first:
+      213: 8837086504682364288
+    second: TX_Village_Props_126
+  - first:
+      213: 950077883998327869
+    second: TX_Village_Props_127
+  - first:
+      213: 1211032803775809635
+    second: TX_Village_Props_128
+  - first:
+      213: -4868346988941454796
+    second: TX_Village_Props_129
+  - first:
+      213: -4454473961770810890
+    second: TX_Village_Props_130
+  - first:
+      213: -2548846744358426329
+    second: TX_Village_Props_131
+  - first:
+      213: 7740500057471624251
+    second: TX_Village_Props_132
+  - first:
+      213: 7489763856339546518
+    second: TX_Village_Props_133
+  - first:
+      213: -4153837088094002044
+    second: TX_Village_Props_134
+  - first:
+      213: -6319770842370626854
+    second: TX_Village_Props_135
+  - first:
+      213: -274248595239903167
+    second: TX_Village_Props_136
+  - first:
+      213: -5512291081300688838
+    second: TX_Village_Props_137
+  - first:
+      213: -7035249758429394350
+    second: TX_Village_Props_138
+  - first:
+      213: 5296951598119337781
+    second: TX_Village_Props_139
+  - first:
+      213: 3206940163409279859
+    second: TX_Village_Props_140
+  - first:
+      213: -91765238507053534
+    second: TX_Village_Props_141
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX_Village_Props_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 479
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d043a6d18cb7d3960800000000000000
+      internalID: 7583353446978958349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 479
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9671e812ada75a130800000000000000
+      internalID: 3577400556300146537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 479
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca72f92f4abfac30800000000000000
+      internalID: 4372918612368980680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 479
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d900a310580a4db0800000000000000
+      internalID: -4807020512244921901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 479
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9506db03f92361fd0800000000000000
+      internalID: -2371652494465081255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 479
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67150e8e920949d20800000000000000
+      internalID: 3284408537935008118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_6
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 499
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccca57b2768eadb50800000000000000
+      internalID: 6618858132182772940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 499
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51872192bd0316ed0800000000000000
+      internalID: -2422601406703568875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 479
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a18dd5e1ac125c0800000000000000
+      internalID: -4241887142234023366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 479
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d5eebd24add5b80800000000000000
+      internalID: -8404321348910949076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 478
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5302148dac24160800000000000000
+      internalID: 7008387000296289757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 479
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5745302670901e230800000000000000
+      internalID: 3666221498970100853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_12
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 479
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126d4315ecff50010800000000000000
+      internalID: 1154610141081163297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_13
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 479
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3287b64ec8f8cf70800000000000000
+      internalID: 9207883002992362044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_14
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 446
+        width: 10
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5e37ce408bca350800000000000000
+      internalID: 6029396332428649917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 479
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1931dd5093a168990800000000000000
+      internalID: -7384185706813516911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_16
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 472
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e231fd27687fd90800000000000000
+      internalID: -7064029662580363625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 447
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bdca364302af710800000000000000
+      internalID: 1727728816432667396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 447
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31b506d089db0860800000000000000
+      internalID: 7497325152058061119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 447
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e59fbd90d17bfd00800000000000000
+      internalID: 1007524082461152741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 458
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883eec1bcbdd1f2b0800000000000000
+      internalID: -5552413063064394872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 447
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8489ebbe464052050800000000000000
+      internalID: 5775026928670906440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_22
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 447
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036fc91045ac78c10800000000000000
+      internalID: 2055834217071048240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 465
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d8d9035c1388ef0800000000000000
+      internalID: -105779868249256566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 447
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea0dc21f35280550800000000000000
+      internalID: 6127188245866154732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_25
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 453
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0d8f86ad6cd1e00800000000000000
+      internalID: 1017187732221907171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_26
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 447
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f35588d8262ca540800000000000000
+      internalID: 5020429641484424180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 453
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c47085fe0e14f80800000000000000
+      internalID: -8123964934220985259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 448
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4859e3a912fe83d0800000000000000
+      internalID: -3202356093075761077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 447
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1f6dbbbd57f2170800000000000000
+      internalID: 8155867036800971193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 447
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe968da34258f70800000000000000
+      internalID: 9188790449876889520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_31
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 415
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f93c8431db9684a0800000000000000
+      internalID: -6591409681778066957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_32
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e651a36845a09f1d0800000000000000
+      internalID: -3316608292436175506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_33
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 448
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913567b419ea932c0800000000000000
+      internalID: -4451334817619487975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_34
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 441
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881c60915aec78150800000000000000
+      internalID: 5874891447412900232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_35
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 432
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c5916d9affcde90800000000000000
+      internalID: -6999438615934051253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 383
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b224da4f4a1b7440800000000000000
+      internalID: 4934566744574665396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_37
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 399
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103c255d087add130800000000000000
+      internalID: 3593212249488147201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_38
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 404
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442eeb0d64ca17f70800000000000000
+      internalID: 9183310535335010884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_39
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 419
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90efb545df5be8100800000000000000
+      internalID: 112227140377509385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_40
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 415
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7657aa8cd16caa0800000000000000
+      internalID: -6141188294182606861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_41
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 415
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ed6172109ca2330800000000000000
+      internalID: 3686980251744132730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_42
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 415
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbb5675f0a680d30800000000000000
+      internalID: 4397881650250628019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_43
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 399
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27febc0055c7351c0800000000000000
+      internalID: -4516129296795046030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_44
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 415
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d403b502ca1b73310800000000000000
+      internalID: 1384770763275055181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_45
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 415
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50160c5c07ba19dd0800000000000000
+      internalID: -2481013418862026491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 415
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2540a511e1e1f50800000000000000
+      internalID: 6853948742777983679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_47
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 415
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43aeeedcf0f7c9cd0800000000000000
+      internalID: -2550023583142319564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_48
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 415
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d597b7b93cc940b0800000000000000
+      internalID: -5743835301466892842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_49
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 415
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40fb5f070a302a80800000000000000
+      internalID: -8493725095223889846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_50
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 399
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36e4c9f091af4540800000000000000
+      internalID: 4994388155814962751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_51
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 383
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8439ce7d4dfcc03c0800000000000000
+      internalID: -4391907023530454200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 383
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb2b89fdb8946dc0800000000000000
+      internalID: -3646621856560370693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 368
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44408b4120d9d5f0800000000000000
+      internalID: -731324623051799477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_54
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 383
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61de0496a04018e0800000000000000
+      internalID: -1724807573090152085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_55
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 367
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06952510ad9f549e0800000000000000
+      internalID: -1637628174758946464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_56
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 367
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c5e56791fa0e840800000000000000
+      internalID: 5251389689408937040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_57
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 351
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7353b21186681f70800000000000000
+      internalID: 9158182546808460158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_58
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 351
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c2d9b976e7ee310800000000000000
+      internalID: 1436224314635267206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_59
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 351
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e875304c4056f670800000000000000
+      internalID: 8572127229171300580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_60
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 351
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8124f4846e86f50800000000000000
+      internalID: 6874998029422827702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_61
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 351
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b38f7de1274f3380800000000000000
+      internalID: -8989388120164170832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 367
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b135955ada494a30800000000000000
+      internalID: 4199970429098865078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_63
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 351
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a6497599bb86eb0800000000000000
+      internalID: -4726321541651600896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_64
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 351
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58871d1d1561b3b60800000000000000
+      internalID: 7726794126352545925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_65
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 337
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d2aa5f7e32e0b20800000000000000
+      internalID: 3102456672470838649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_66
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 319
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc77054058bdd22d0800000000000000
+      internalID: -3301741587443189812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_67
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 331
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a302f1bf17a81bd70800000000000000
+      internalID: 9057172547767836730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_68
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 335
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7734a5969e3a9460800000000000000
+      internalID: 7249175366682818427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_69
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 337
+        width: 47
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ac3604776fd5880800000000000000
+      internalID: -8620463119675438576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_70
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 303
+        width: 12
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a18ffb1e5de1acd0800000000000000
+      internalID: -2548494925662551642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_71
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 293
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4ff5cf95351ef80800000000000000
+      internalID: -8079084610574617406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_72
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 319
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d45aec043f3e4b70800000000000000
+      internalID: 8885108607636100307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_73
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 324
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1192eb8e9c24e160800000000000000
+      internalID: 7053811975832375583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_74
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 324
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f3008e0843bed80800000000000000
+      internalID: -8220418966581919909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_75
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 324
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea28a5fb2f1a8ba50800000000000000
+      internalID: 6537152923092812462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_76
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 324
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63d9a4bfb72135e0800000000000000
+      internalID: -1931719060841966738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_77
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 321
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4aa252c9450f3320800000000000000
+      internalID: 2539754529211198027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_78
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 323
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489374651bd2f2830800000000000000
+      internalID: 4048504829709334916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_79
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 322
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63a86f93fb7f26c0800000000000000
+      internalID: -4165974844012715153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_80
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 319
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df235d12a9bacdb0800000000000000
+      internalID: -4770796749317787687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_81
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 319
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e160b0d82cdd460e0800000000000000
+      internalID: -2277451683882924514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_82
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 319
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374234b1046568f00800000000000000
+      internalID: 1118676390783427699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_83
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 306
+        width: 54
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaad75a8b7206680800000000000000
+      internalID: -8763961200859043165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_84
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 302
+        width: 49
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deee08d5367199500800000000000000
+      internalID: 403379357164302061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_85
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 303
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2296d3d590818c0800000000000000
+      internalID: -4028459570615999811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_86
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 303
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2ed80905ab7e40800000000000000
+      internalID: 5655295215315857015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_87
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 293
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c564c46867dea370800000000000000
+      internalID: 8335836803676530115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_88
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 306
+        width: 43
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392f3c612a39d45a0800000000000000
+      internalID: -6535405159868796269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_89
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 304
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3102692cede09a20800000000000000
+      internalID: 3067212944801661245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_90
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 305
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3574a4387ac824da0800000000000000
+      internalID: -5962048305595005101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_91
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 290
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21aa76c9fff9b2d0800000000000000
+      internalID: -3262295006811348692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_92
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 290
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aae2479345cd62d0800000000000000
+      internalID: -3283751659191997783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_93
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 290
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eec1eed3e13df0b0800000000000000
+      internalID: -5693339499159761183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_94
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 290
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06446ea4f10123e0800000000000000
+      internalID: -2080379402459003378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_95
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 289
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9863ef0742c33cbf0800000000000000
+      internalID: -305334222518864247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_96
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 267
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3905d462bce1130800000000000000
+      internalID: 3539489722526110690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_97
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 239
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c30673e1dbed590800000000000000
+      internalID: -7647467179752801149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_98
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 222
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c27bf30bf7f6c400800000000000000
+      internalID: 344235079016084161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_99
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 222
+        width: 12
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2825b672f57ecdf70800000000000000
+      internalID: 9213493333562446466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_100
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4b4714932cc0cf0800000000000000
+      internalID: -284639125264091936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_101
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 271
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f0c655f4a5d6420800000000000000
+      internalID: 2624853454608928647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_102
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 255
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca885c1bd6f08950800000000000000
+      internalID: 6449426087328385741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_103
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 239
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c524b66a9662e7f0800000000000000
+      internalID: -584792188270664256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_104
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 239
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682840ec261ec0a60800000000000000
+      internalID: 7641730482220335750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_105
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 239
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d65f2751de028c50800000000000000
+      internalID: 6665906690735429330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_106
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 206
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b676e147f42da8a0800000000000000
+      internalID: -6292332459985570123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_107
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 206
+        width: 79
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfd07f56bce20f80800000000000000
+      internalID: -8141684908302999597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_108
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 239
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fd4db41908bed30800000000000000
+      internalID: 4461801217371463562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_109
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 255
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc8b65c60ba52f60800000000000000
+      internalID: 8008995557918608625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_110
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 239
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794d54d0908c3ece0800000000000000
+      internalID: -1377037119842298729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_111
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 239
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9ad55e4c8ca4440800000000000000
+      internalID: 4920966290842954211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_112
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 239
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ef549dec43b4a70800000000000000
+      internalID: 8812195158893657684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_113
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 239
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea46b016756e19e0800000000000000
+      internalID: -1648768855810094368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_114
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 207
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ee6ca5528329350800000000000000
+      internalID: 6021937384835706465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_115
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 207
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b255f1ac4823d650800000000000000
+      internalID: 6256388616947585713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_116
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 207
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b27977aa3da6780800000000000000
+      internalID: -8688899801953653914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_117
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8db73cc3bd43c60800000000000000
+      internalID: 7797097908909365450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_118
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 206
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f57aa1ce7702080800000000000000
+      internalID: -9214232981656871115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_119
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 206
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b9011963fa730b0800000000000000
+      internalID: -5748933750418269296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_120
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 206
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302cd05f56c6d7380800000000000000
+      internalID: -8971895697493343741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_121
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 126
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81452cdad48a6d240800000000000000
+      internalID: 4816221903100466200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_122
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 181
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdc445c0e3c5cdc0800000000000000
+      internalID: -3619271355372614200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_123
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 142
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822d7ee79441b7780800000000000000
+      internalID: -8684325150559579608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_124
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 174
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9d1d53e9e552a80800000000000000
+      internalID: -8492277488736413272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_125
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 174
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06f2e8c180ee0720800000000000000
+      internalID: 2814433665178859022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_126
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 111
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d9df8ea53a3aa70800000000000000
+      internalID: 8837086504682364288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_127
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 142
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34dca04dca5f2d00800000000000000
+      internalID: 950077883998327869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_128
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 174
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36807603be37ec010800000000000000
+      internalID: 1211032803775809635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_129
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 174
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4325dc80538207cb0800000000000000
+      internalID: -4868346988941454796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_130
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 142
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f18c6758878e22c0800000000000000
+      internalID: -4454473961770810890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_131
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 174
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729ea9fe36da0acd0800000000000000
+      internalID: -2548846744358426329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_132
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 142
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34ac759ac7cb6b60800000000000000
+      internalID: 7740500057471624251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_133
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 174
+        width: 65
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691bdac7b8cf0f760800000000000000
+      internalID: 7489763856339546518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_134
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 142
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48460552d2b9a56c0800000000000000
+      internalID: -4153837088094002044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_135
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 142
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adaa0a607e9ab48a0800000000000000
+      internalID: -6319770842370626854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_136
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 175
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140639c0b5ca13cf0800000000000000
+      internalID: -274248595239903167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_137
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 142
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30c48887786083b0800000000000000
+      internalID: -5512291081300688838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_138
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 142
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ac9aa7e95cd5e90800000000000000
+      internalID: -7035249758429394350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_139
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 94
+        width: 66
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f375ef96d828940800000000000000
+      internalID: 5296951598119337781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_140
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 116
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b71f76617518c20800000000000000
+      internalID: 3206940163409279859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX_Village_Props_141
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 18
+        width: 48
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ede04700cf9bef0800000000000000
+      internalID: -91765238507053534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TX_Village_Props_0: 7583353446978958349
+      TX_Village_Props_1: 3577400556300146537
+      TX_Village_Props_10: 7008387000296289757
+      TX_Village_Props_100: -284639125264091936
+      TX_Village_Props_101: 2624853454608928647
+      TX_Village_Props_102: 6449426087328385741
+      TX_Village_Props_103: -584792188270664256
+      TX_Village_Props_104: 7641730482220335750
+      TX_Village_Props_105: 6665906690735429330
+      TX_Village_Props_106: -6292332459985570123
+      TX_Village_Props_107: -8141684908302999597
+      TX_Village_Props_108: 4461801217371463562
+      TX_Village_Props_109: 8008995557918608625
+      TX_Village_Props_11: 3666221498970100853
+      TX_Village_Props_110: -1377037119842298729
+      TX_Village_Props_111: 4920966290842954211
+      TX_Village_Props_112: 8812195158893657684
+      TX_Village_Props_113: -1648768855810094368
+      TX_Village_Props_114: 6021937384835706465
+      TX_Village_Props_115: 6256388616947585713
+      TX_Village_Props_116: -8688899801953653914
+      TX_Village_Props_117: 7797097908909365450
+      TX_Village_Props_118: -9214232981656871115
+      TX_Village_Props_119: -5748933750418269296
+      TX_Village_Props_12: 1154610141081163297
+      TX_Village_Props_120: -8971895697493343741
+      TX_Village_Props_121: 4816221903100466200
+      TX_Village_Props_122: -3619271355372614200
+      TX_Village_Props_123: -8684325150559579608
+      TX_Village_Props_124: -8492277488736413272
+      TX_Village_Props_125: 2814433665178859022
+      TX_Village_Props_126: 8837086504682364288
+      TX_Village_Props_127: 950077883998327869
+      TX_Village_Props_128: 1211032803775809635
+      TX_Village_Props_129: -4868346988941454796
+      TX_Village_Props_13: 9207883002992362044
+      TX_Village_Props_130: -4454473961770810890
+      TX_Village_Props_131: -2548846744358426329
+      TX_Village_Props_132: 7740500057471624251
+      TX_Village_Props_133: 7489763856339546518
+      TX_Village_Props_134: -4153837088094002044
+      TX_Village_Props_135: -6319770842370626854
+      TX_Village_Props_136: -274248595239903167
+      TX_Village_Props_137: -5512291081300688838
+      TX_Village_Props_138: -7035249758429394350
+      TX_Village_Props_139: 5296951598119337781
+      TX_Village_Props_14: 6029396332428649917
+      TX_Village_Props_140: 3206940163409279859
+      TX_Village_Props_141: -91765238507053534
+      TX_Village_Props_15: -7384185706813516911
+      TX_Village_Props_16: -7064029662580363625
+      TX_Village_Props_17: 1727728816432667396
+      TX_Village_Props_18: 7497325152058061119
+      TX_Village_Props_19: 1007524082461152741
+      TX_Village_Props_2: 4372918612368980680
+      TX_Village_Props_20: -5552413063064394872
+      TX_Village_Props_21: 5775026928670906440
+      TX_Village_Props_22: 2055834217071048240
+      TX_Village_Props_23: -105779868249256566
+      TX_Village_Props_24: 6127188245866154732
+      TX_Village_Props_25: 1017187732221907171
+      TX_Village_Props_26: 5020429641484424180
+      TX_Village_Props_27: -8123964934220985259
+      TX_Village_Props_28: -3202356093075761077
+      TX_Village_Props_29: 8155867036800971193
+      TX_Village_Props_3: -4807020512244921901
+      TX_Village_Props_30: 9188790449876889520
+      TX_Village_Props_31: -6591409681778066957
+      TX_Village_Props_32: -3316608292436175506
+      TX_Village_Props_33: -4451334817619487975
+      TX_Village_Props_34: 5874891447412900232
+      TX_Village_Props_35: -6999438615934051253
+      TX_Village_Props_36: 4934566744574665396
+      TX_Village_Props_37: 3593212249488147201
+      TX_Village_Props_38: 9183310535335010884
+      TX_Village_Props_39: 112227140377509385
+      TX_Village_Props_4: -2371652494465081255
+      TX_Village_Props_40: -6141188294182606861
+      TX_Village_Props_41: 3686980251744132730
+      TX_Village_Props_42: 4397881650250628019
+      TX_Village_Props_43: -4516129296795046030
+      TX_Village_Props_44: 1384770763275055181
+      TX_Village_Props_45: -2481013418862026491
+      TX_Village_Props_46: 6853948742777983679
+      TX_Village_Props_47: -2550023583142319564
+      TX_Village_Props_48: -5743835301466892842
+      TX_Village_Props_49: -8493725095223889846
+      TX_Village_Props_5: 3284408537935008118
+      TX_Village_Props_50: 4994388155814962751
+      TX_Village_Props_51: -4391907023530454200
+      TX_Village_Props_52: -3646621856560370693
+      TX_Village_Props_53: -731324623051799477
+      TX_Village_Props_54: -1724807573090152085
+      TX_Village_Props_55: -1637628174758946464
+      TX_Village_Props_56: 5251389689408937040
+      TX_Village_Props_57: 9158182546808460158
+      TX_Village_Props_58: 1436224314635267206
+      TX_Village_Props_59: 8572127229171300580
+      TX_Village_Props_6: 6618858132182772940
+      TX_Village_Props_60: 6874998029422827702
+      TX_Village_Props_61: -8989388120164170832
+      TX_Village_Props_62: 4199970429098865078
+      TX_Village_Props_63: -4726321541651600896
+      TX_Village_Props_64: 7726794126352545925
+      TX_Village_Props_65: 3102456672470838649
+      TX_Village_Props_66: -3301741587443189812
+      TX_Village_Props_67: 9057172547767836730
+      TX_Village_Props_68: 7249175366682818427
+      TX_Village_Props_69: -8620463119675438576
+      TX_Village_Props_7: -2422601406703568875
+      TX_Village_Props_70: -2548494925662551642
+      TX_Village_Props_71: -8079084610574617406
+      TX_Village_Props_72: 8885108607636100307
+      TX_Village_Props_73: 7053811975832375583
+      TX_Village_Props_74: -8220418966581919909
+      TX_Village_Props_75: 6537152923092812462
+      TX_Village_Props_76: -1931719060841966738
+      TX_Village_Props_77: 2539754529211198027
+      TX_Village_Props_78: 4048504829709334916
+      TX_Village_Props_79: -4165974844012715153
+      TX_Village_Props_8: -4241887142234023366
+      TX_Village_Props_80: -4770796749317787687
+      TX_Village_Props_81: -2277451683882924514
+      TX_Village_Props_82: 1118676390783427699
+      TX_Village_Props_83: -8763961200859043165
+      TX_Village_Props_84: 403379357164302061
+      TX_Village_Props_85: -4028459570615999811
+      TX_Village_Props_86: 5655295215315857015
+      TX_Village_Props_87: 8335836803676530115
+      TX_Village_Props_88: -6535405159868796269
+      TX_Village_Props_89: 3067212944801661245
+      TX_Village_Props_9: -8404321348910949076
+      TX_Village_Props_90: -5962048305595005101
+      TX_Village_Props_91: -3262295006811348692
+      TX_Village_Props_92: -3283751659191997783
+      TX_Village_Props_93: -5693339499159761183
+      TX_Village_Props_94: -2080379402459003378
+      TX_Village_Props_95: -305334222518864247
+      TX_Village_Props_96: 3539489722526110690
+      TX_Village_Props_97: -7647467179752801149
+      TX_Village_Props_98: 344235079016084161
+      TX_Village_Props_99: 9213493333562446466
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
