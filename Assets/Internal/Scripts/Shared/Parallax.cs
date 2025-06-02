@@ -6,16 +6,20 @@ using UnityEngine.UIElements;
 public class Parallax : MonoBehaviour
 {
     private float lengthx, lengthy, startposx, startposy;
-    public GameObject cam;
-    public float parallexEffectX;
-    public float parallexEffectY;
-    void Start()
+    [SerializeField] private GameObject cam;
+    [SerializeField] private float parallexEffectX;
+    [SerializeField] private float parallexEffectY;
+
+    [SerializeField] private bool repeating = true;
+
+
+    public void Start()
     {
         startposx = transform.position.x;
         startposy = transform.position.y;
         lengthx = GetComponent<SpriteRenderer>().bounds.size.x;
     }
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         float temp = (cam.transform.position.x * (1 - parallexEffectX));
         float distx = (cam.transform.position.x * parallexEffectX);
@@ -23,16 +27,17 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector3(startposx + distx, startposy + disty, transform.position.z);
 
-        if (temp > startposx + lengthx/2)
+        if (repeating)
         {
-            startposx += lengthx;
-        }
-        else if (temp < startposx - lengthx/2) 
-        { 
-            startposx -= lengthx;
-    
-        }
+            if (temp > startposx + lengthx / 2)
+            {
+                startposx += lengthx;
+            }
+            else if (temp < startposx - lengthx / 2)
+            {
+                startposx -= lengthx;
 
-
+            }
+        }
     }
 }
