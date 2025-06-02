@@ -3146,7 +3146,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 3.5, y: 4.53125, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -3198,7 +3198,7 @@ Grid:
   m_CellGap: {x: 1, y: 1, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &7310341456297674968
+--- !u!114 &8551349695075246954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
