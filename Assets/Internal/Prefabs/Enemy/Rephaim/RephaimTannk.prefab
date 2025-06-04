@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &489177994630029577
 Transform:
   m_ObjectHideFlags: 0
@@ -235,6 +235,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyData: {fileID: 11400000, guid: a458f69d966175844b52024c744560d7, type: 2}
+  LungeSpeed: 15
+  LungeDuration: 0.2
+  PostLungeCooldown: 0.5
 --- !u!114 &8395005140958043018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9062602606988009918
 Transform:
   m_ObjectHideFlags: 0
@@ -343,7 +346,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.14450268, y: 0.1393917}
+  m_Offset: {x: 0.058042005, y: 0.17275113}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -353,7 +356,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.40991452, y: 0.15642753}
+  m_Size: {x: 0.49983367, y: 0.30136847}
   m_EdgeRadius: 0
 --- !u!114 &768842663765289966
 MonoBehaviour:

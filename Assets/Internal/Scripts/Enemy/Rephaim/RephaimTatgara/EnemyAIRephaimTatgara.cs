@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class EnemyAIRephaimTatgara : MonoBehaviour
+public class EnemyAITatgara : MonoBehaviour
 {
     public EnemyData EnemyData;
 
     private float LastAttackTime;
+    private float NextMoveDecisionTime;
+    private bool IsRetreating;
+    private bool IsStrafing;
+    private int StrafeDirection; // -1 = Left, 1 = Right
 
     private BoxCollider2D AttackHitbox;
     private Rigidbody2D Body;
@@ -14,10 +18,7 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
     void Awake()
     {
         Body = GetComponent<Rigidbody2D>();
-        Body.constraints = RigidbodyConstraints2D.FreezeRotation | 
-            RigidbodyConstraints2D.FreezePositionX;
         Anim = GetComponent<Animator>();
-        
         AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
         Player = GameObject.FindWithTag("Player").transform;
     }
@@ -34,24 +35,56 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
 
         float Distance = Vector2.Distance(transform.position, Player.position);
 
+        if (Time.time > NextMoveDecisionTime)
+        {
+            DecideMovementPattern();
+            NextMoveDecisionTime = Time.time + Random.Range(1.5f, 3f);
+        }
+
         if (Distance > EnemyData.AttackRange)
         {
-            float dirX = Player.position.x - transform.position.x;
-            Vector3 move = new Vector3(Mathf.Sign(dirX) * EnemyData.MoveSpeed * Time.deltaTime, 0, 0);
-            transform.position += move;
-
-            if (dirX != 0)
-                transform.localScale = new Vector3(Mathf.Sign(dirX) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
+            MoveToPlayer();
         }
-        else if (Time.time >= LastAttackTime + EnemyData.AttackCooldown)
+        else if (Time.time >= LastAttackTime + EnemyData.AttackCooldown + Random.Range(0f, 0.3f))
         {
             StartAttack();
         }
     }
 
+    void DecideMovementPattern()
+    {
+        float RandVal = Random.value;
+        IsRetreating = RandVal < 0.15f;
+        IsStrafing = !IsRetreating && RandVal < 0.4f;
+        StrafeDirection = Random.value > 0.5f ? 1 : -1;
+    }
+
+    void MoveToPlayer()
+    {
+        Vector3 Move = Vector3.zero;
+        float DirX = Player.position.x - transform.position.x;
+
+        if (IsRetreating)
+        {
+            Move = new Vector3(-Mathf.Sign(DirX) * EnemyData.MoveSpeed * 0.7f * Time.deltaTime, 0, 0);
+        }
+        else if (IsStrafing)
+        {
+            Move = new Vector3(StrafeDirection * EnemyData.MoveSpeed * 0.5f * Time.deltaTime, 0, 0);
+        }
+        else
+        {
+            Move = new Vector3(Mathf.Sign(DirX) * EnemyData.MoveSpeed * Time.deltaTime, 0, 0);
+        }
+
+        transform.position += Move;
+
+        if (DirX != 0)
+            transform.localScale = new Vector3(Mathf.Sign(DirX) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
+    }
+
     void StartAttack()
     {
-        print("here");
         Anim.SetTrigger("Attack");
         Anim.SetBool("IsAttacking", true);
         Anim.SetBool("IsWalking", false);
@@ -59,16 +92,9 @@ public class EnemyAIRephaimTatgara : MonoBehaviour
         LastAttackTime = Time.time;
     }
 
-    void ActivateAttackHitbox()
-    {
-        AttackHitbox.gameObject.SetActive(true);
-    }
-
-    void DeactivateAttackHitbox()
-    {
-        AttackHitbox.gameObject.SetActive(false);
-    }
-
+    // Animation Events
+    void ActivateAttackHitbox() => AttackHitbox.gameObject.SetActive(true);
+    void DeactivateAttackHitbox() => AttackHitbox.gameObject.SetActive(false);
     void EndAttack()
     {
         Anim.SetBool("IsAttacking", false);
