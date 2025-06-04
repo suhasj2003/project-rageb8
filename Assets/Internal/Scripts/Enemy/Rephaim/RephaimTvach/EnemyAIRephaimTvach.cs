@@ -1,80 +1,118 @@
 using UnityEngine;
+using System.Collections;
 
-public class EnemyAIRephaimTvach : MonoBehaviour
+public class RangedEnemyAI : MonoBehaviour
 {
-    public EnemyData EnemyData;
+    [Header("Combat")]
+    [SerializeField] private float DetectionRange = 8f;
+    [SerializeField] private float OptimalRange = 5f;
+    [SerializeField] private float AttackCooldown = 2f;
+    [SerializeField] private float ProjectileSpeed = 8f;
 
-    private float LastAttackTime;
-    private bool IsAttacking = false;
+    [Header("References")]
+    [SerializeField] private Transform ProjectileSpawnPoint;
 
-    private BoxCollider2D AttackHitbox;
-    private Rigidbody2D Body;
-    private Animator Anim;
     private Transform Player;
+    private float LastAttackTime;
+    private Animator Anim;
+    private Rigidbody2D RB;
 
     void Awake()
     {
-        Body = GetComponent<Rigidbody2D>();
-        Body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
         Anim = GetComponent<Animator>();
-        
-        AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
-        Player = GameObject.FindWithTag("Player").transform;
+        RB = GetComponent<Rigidbody2D>();
     }
 
     void Start()
     {
-        AttackHitbox.gameObject.SetActive(false);
+        RB.constraints = RigidbodyConstraints2D.FreezePositionY;
         Anim.SetBool("CanMove", true);
     }
 
     void Update()
     {
-        if (Player == null || !Anim.GetBool("CanMove")) return;
+        if (Player == null) return;
+        if (!Anim.GetBool("CanMove")) return;
 
-        float Distance = Vector2.Distance(transform.position, Player.position);
+        float distance = Vector2.Distance(transform.position, Player.position);
+        UpdateFacingDirection();
 
-        // Chase if not in attack range
-        if (Distance > EnemyData.AttackRange && !IsAttacking)
+        if (distance <= DetectionRange)
         {
-            Anim.SetBool("IsAttacking", false);
-            Anim.SetBool("IsWalking", true);
-            Vector2 dir = (Player.position - transform.position).normalized;
-            transform.position += (Vector3)dir * EnemyData.MoveSpeed * Time.deltaTime;
-
-            if (dir.x != 0)
-                transform.localScale = new Vector3(Mathf.Sign(dir.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
-        }
-        else
-        {
-            Anim.SetBool("IsWalking", false);
-
-            if (Time.time >= LastAttackTime + EnemyData.AttackCooldown && !Anim.GetBool("IsAttacking"))
+            if (distance > OptimalRange)
             {
-                StartAttack();
+                Anim.SetBool("IsWalking", true);
+                MoveTowardsPlayer();
+            }
+            else if (Time.time >= LastAttackTime + AttackCooldown)
+            {
+                StopMoving();
+                Attack();
             }
         }
     }
 
-    void StartAttack()
+    void UpdateFacingDirection()
     {
-        Anim.SetBool("IsAttacking", true);
+        if (Player.position.x > transform.position.x)
+            LeanTween.rotateY(gameObject, 0, 0).setEaseInOutSine();
+        else
+            LeanTween.rotateY(gameObject, 180, 0).setEaseInOutSine();
+    }
+
+    void MoveTowardsPlayer()
+    {
+        Vector2 direction = (Player.position - transform.position).normalized;
+        transform.Translate(direction * Time.deltaTime * 3f);
+        Anim.SetBool("CanMove", true);
+    }
+
+    void StopMoving()
+    {
+        Anim.SetBool("IsWalking", false);
+        Anim.SetBool("CanMove", false);
+    }
+
+    void Attack()
+    {
         Anim.SetTrigger("Attack");
         LastAttackTime = Time.time;
     }
 
-    void ActivateAttackHitbox()
+    // Animation event
+    void FireProjectile()
     {
-        AttackHitbox.gameObject.SetActive(true);
-    }
+        GameObject projectile = ProjectilePool.Instance.GetProjectile(
+            ProjectileSpawnPoint.position,
+            ProjectileSpawnPoint.rotation
+        );
 
-    void DeactivateAttackHitbox()
-    {
-        AttackHitbox.gameObject.SetActive(false);
+        Vector2 direction = (Player.position - ProjectileSpawnPoint.position).normalized;
+        projectile.GetComponent<Rigidbody2D>().linearVelocity = direction * ProjectileSpeed;
+        StartCoroutine(ReturnProjectileAfterDelay(projectile, 2f));
     }
 
     void EndAttack()
     {
-        Anim.SetBool("IsAttacking", false);
+        Anim.SetBool("CanMove", true);
+    }
+
+    IEnumerator ReturnProjectileAfterDelay(GameObject projectile, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ProjectilePool.Instance.ReturnProjectile(projectile);
+    }
+
+    bool HasLineOfSight()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            Player.position - transform.position,
+            DetectionRange,
+            LayerMask.GetMask("Player", "Walls")
+        );
+
+        return hit.collider != null && hit.collider.CompareTag("Player");
     }
 }

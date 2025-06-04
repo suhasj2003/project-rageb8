@@ -16,4 +16,5 @@ MonoBehaviour:
   MoveSpeed: 2
   AttackDamage: 10
   AttackCooldown: 0.5
-  AttackRange: 1
+  AttackRange: 7
+  AlertRange: 10

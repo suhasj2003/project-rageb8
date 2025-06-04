@@ -137,11 +137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284141427669819874, guid: 36a6adf323d96224fa326909cca82c87, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.13
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 5284141427669819874, guid: 36a6adf323d96224fa326909cca82c87, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.54
+      value: -2.71
       objectReference: {fileID: 0}
     - target: {fileID: 5284141427669819874, guid: 36a6adf323d96224fa326909cca82c87, type: 3}
       propertyPath: m_LocalPosition.z
@@ -175,10 +175,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6662742964963985634, guid: 36a6adf323d96224fa326909cca82c87, type: 3}
-      propertyPath: m_GravityScale
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7749519944153531995, guid: 36a6adf323d96224fa326909cca82c87, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -200,17 +196,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: RephaimTatgara
       objectReference: {fileID: 0}
-    - target: {fileID: 1778391513573527583, guid: 284c3af4fc7104446bd1a9c180e2dc02, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8392193424392646636, guid: 284c3af4fc7104446bd1a9c180e2dc02, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.75
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8392193424392646636, guid: 284c3af4fc7104446bd1a9c180e2dc02, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 8392193424392646636, guid: 284c3af4fc7104446bd1a9c180e2dc02, type: 3}
       propertyPath: m_LocalPosition.z
@@ -518,7 +510,7 @@ Transform:
   m_GameObject: {fileID: 779238534}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 1.17, z: 0}
+  m_LocalPosition: {x: -9.51, y: -0.04, z: 0}
   m_LocalScale: {x: 1.9285588, y: 4.673621, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -680,7 +672,7 @@ Transform:
   m_GameObject: {fileID: 1060669411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.78, y: 0.22, z: 0}
+  m_LocalPosition: {x: -6.13, y: -1.36, z: 0}
   m_LocalScale: {x: 1.9285588, y: 1.9475263, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -984,6 +976,37 @@ Transform:
   - {fileID: 773318681}
   - {fileID: 2139191630}
   - {fileID: 779238535}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1268159312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1268159313}
+  m_Layer: 0
+  m_Name: Tilemap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1268159313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268159312}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.74975, y: 0.10621, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326525704
@@ -1379,11 +1402,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 489177994630029577, guid: 4ca7fc4c7014c944880c0135c86b788b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.47
+      value: -3.03
       objectReference: {fileID: 0}
     - target: {fileID: 489177994630029577, guid: 4ca7fc4c7014c944880c0135c86b788b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8299998
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 489177994630029577, guid: 4ca7fc4c7014c944880c0135c86b788b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1421,10 +1444,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RephaimTannk
       objectReference: {fileID: 0}
-    - target: {fileID: 3732574733472270492, guid: 4ca7fc4c7014c944880c0135c86b788b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1440,11 +1459,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6951831784729101341, guid: e7ebfc44a80841e43b27d51f4224a319, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.19
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 6951831784729101341, guid: e7ebfc44a80841e43b27d51f4224a319, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 6951831784729101341, guid: e7ebfc44a80841e43b27d51f4224a319, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1482,10 +1501,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RephaimTvach
       objectReference: {fileID: 0}
-    - target: {fileID: 8375707334914663279, guid: e7ebfc44a80841e43b27d51f4224a319, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1496,11 +1511,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1191745281}
-  - {fileID: 1129863610}
   - {fileID: 1326525706}
   - {fileID: 2135655547}
   - {fileID: 187753553}
+  - {fileID: 1129863610}
   - {fileID: 128569068}
   - {fileID: 3747433708271396911}
   - {fileID: 1803192693125288776}
   - {fileID: 103624510}
+  - {fileID: 1268159313}

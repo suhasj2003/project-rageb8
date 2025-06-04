@@ -3,9 +3,14 @@ using UnityEngine;
 public class EnemyAIRephaimTannk : MonoBehaviour
 {
     public EnemyData EnemyData;
+    [Header("Lunge Settings")]
+    [SerializeField] private float LungeSpeed = 15f;
+    [SerializeField] private float LungeDuration = 0.2f;
+    [SerializeField] private float PostLungeCooldown = 0.5f;
 
     private float LastAttackTime;
-    private bool IsAttacking = false;
+    private bool IsLunging;
+    private Vector2 LungeTargetPosition;
 
     private BoxCollider2D AttackHitbox;
     private Rigidbody2D Body;
@@ -17,7 +22,6 @@ public class EnemyAIRephaimTannk : MonoBehaviour
         Body = GetComponent<Rigidbody2D>();
         Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         Anim = GetComponent<Animator>();
-        
         AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
         Player = GameObject.FindWithTag("Player").transform;
     }
@@ -30,51 +34,74 @@ public class EnemyAIRephaimTannk : MonoBehaviour
 
     void Update()
     {
-        if (Player == null || !Anim.GetBool("CanMove")) return;
+        if (Player == null || IsLunging || !Anim.GetBool("CanMove")) return;
 
-        float Distance = Vector2.Distance(transform.position, Player.position);
+        float distance = Vector2.Distance(transform.position, Player.position);
+        UpdateFacingDirection();
 
-        // Chase if not in attack range
-        if (Distance > EnemyData.AttackRange && !IsAttacking)
+        if (distance <= EnemyData.AlertRange)
         {
-            Anim.SetBool("IsAttacking", false);
-            Anim.SetBool("IsWalking", true);
-            Vector2 dir = (Player.position - transform.position).normalized;
-            transform.position += (Vector3)dir * EnemyData.MoveSpeed * Time.deltaTime;
-
-            if (dir.x != 0)
-                transform.localScale = new Vector3(Mathf.Sign(dir.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
-        }
-        else
-        {
-            Anim.SetBool("IsWalking", false);
-
-            if (Time.time >= LastAttackTime + EnemyData.AttackCooldown && !Anim.GetBool("IsAttacking"))
+            Anim.SetTrigger("IsAlert");
+            if (distance <= EnemyData.AttackRange)
             {
-                StartAttack();
+
+                if (Time.time >= LastAttackTime + EnemyData.AttackCooldown)
+                {
+                    StartLungeAttack();
+                }
             }
         }
     }
 
-    void StartAttack()
+    private void StartLungeAttack()
     {
-        Anim.SetBool("IsAttacking", true);
-        Anim.SetTrigger("Attack");
+        IsLunging = true;
+        Anim.SetBool("CanMove", false);
+        LungeTargetPosition = Player.position;
         LastAttackTime = Time.time;
+
+        LungeMovement();
     }
 
-    void ActivateAttackHitbox()
+    private void LungeMovement()
+    {
+        Anim.SetTrigger("Lunge");
+
+        float timer = 0;
+        Vector2 startPosition = transform.position;
+
+        while (timer < LungeDuration)
+        {
+            transform.position = Vector2.Lerp(startPosition, LungeTargetPosition, timer / LungeDuration);
+            timer += Time.deltaTime;
+        }
+
+        transform.position = LungeTargetPosition;
+
+        Anim.SetTrigger("Attack");
+    }
+
+    private void UpdateFacingDirection()
+    {
+        if (Player.position.x > transform.position.x)
+            LeanTween.rotateY(gameObject, 0, 0).setEaseInOutSine();
+        else
+            LeanTween.rotateY(gameObject, 180, 0).setEaseInOutSine();
+    }
+
+    private void EndAttack()
+    {
+        IsLunging = false;
+        Anim.SetBool("CanMove", true); 
+    }
+
+    private void ActivateAttackHitbox()
     {
         AttackHitbox.gameObject.SetActive(true);
     }
 
-    void DeactivateAttackHitbox()
+    private void DeactivateAttackHitbox()
     {
         AttackHitbox.gameObject.SetActive(false);
-    }
-
-    void EndAttack()
-    {
-        Anim.SetBool("IsAttacking", false);
     }
 }

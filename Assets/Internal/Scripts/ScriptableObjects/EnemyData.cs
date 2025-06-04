@@ -8,4 +8,5 @@ public class EnemyData : ScriptableObject
     public int AttackDamage;
     public float AttackCooldown;
     public float AttackRange;
+    public float AlertRange;
 }
