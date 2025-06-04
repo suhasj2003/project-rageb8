@@ -6,10 +6,10 @@ public class ProjectilePool : MonoBehaviour
 {
     public static ProjectilePool Instance;
 
-    [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private int poolSize = 20;
+    [SerializeField] private GameObject ProjectilePrefab;
+    [SerializeField] private int PoolSize = 20;
 
-    private Queue<GameObject> projectilePool = new Queue<GameObject>();
+    private Queue<GameObject> ProjectilePoolObj = new Queue<GameObject>();
 
     void Awake()
     {
@@ -19,39 +19,39 @@ public class ProjectilePool : MonoBehaviour
 
     void InitializePool()
     {
-        for (int i = 0; i < poolSize; i++)
+        for (int i = 0; i < PoolSize; i++)
         {
-            GameObject projectile = Instantiate(projectilePrefab);
-            projectile.SetActive(false);
-            projectile.transform.SetParent(gameObject.transform);
-            projectilePool.Enqueue(projectile);
+            GameObject Projectile = Instantiate(ProjectilePrefab);
+            Projectile.SetActive(false);
+            Projectile.transform.SetParent(gameObject.transform);
+            ProjectilePoolObj.Enqueue(Projectile);
         }
     }
 
-    public GameObject GetProjectile(Vector2 position, Quaternion rotation)
+    public GameObject GetProjectile(Vector2 Position, Quaternion Rotation)
     {
-        if (projectilePool.Count == 0)
+        if (ProjectilePoolObj.Count == 0)
             ExpandPool();
 
-        GameObject projectile = projectilePool.Dequeue();
-        projectile.transform.position = position;
-        projectile.transform.rotation = rotation;
-        projectile.transform.localScale = new Vector3(1, 1, 0);
-        projectile.SetActive(true);
-        return projectile;
+        GameObject Projectile = ProjectilePoolObj.Dequeue();
+        Projectile.transform.position = Position;
+        Projectile.transform.rotation = Rotation;
+        Projectile.transform.localScale = new Vector3(1, 1, 0);
+        Projectile.SetActive(true);
+        return Projectile;
     }
 
     public void ReturnProjectile(GameObject projectile)
     {
         projectile.SetActive(false);
-        projectilePool.Enqueue(projectile);
+        ProjectilePoolObj.Enqueue(projectile);
     }
 
     private void ExpandPool()
     {
-        GameObject projectile = Instantiate(projectilePrefab);
-        projectile.SetActive(false);
-        projectilePool.Enqueue(projectile);
+        GameObject Projectile = Instantiate(ProjectilePrefab);
+        Projectile.SetActive(false);
+        ProjectilePoolObj.Enqueue(Projectile);
     }
 }
 

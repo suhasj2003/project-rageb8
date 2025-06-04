@@ -26,6 +26,8 @@ public class RangedEnemyAI : MonoBehaviour
 
     void Start()
     {
+        RB.constraints = RigidbodyConstraints2D.FreezeRotation;
+        RB.constraints = RigidbodyConstraints2D.FreezePositionX;
         RB.constraints = RigidbodyConstraints2D.FreezePositionY;
         Anim.SetBool("CanMove", true);
     }
