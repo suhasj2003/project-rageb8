@@ -24,8 +24,6 @@ public class DodgeRoll : MonoBehaviour
         SpriteRenderer = GetComponent<SpriteRenderer>();
         Hitbox = GetComponent<BoxCollider2D>();
         PM = FindFirstObjectByType<PlayerMovement>();
-
-
         Body = GetComponent<Rigidbody2D>();
     }
 

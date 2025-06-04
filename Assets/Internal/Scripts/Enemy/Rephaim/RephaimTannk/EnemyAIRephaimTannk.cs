@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyAIRephaimTannk : MonoBehaviour
 {
@@ -6,7 +7,6 @@ public class EnemyAIRephaimTannk : MonoBehaviour
     [Header("Lunge Settings")]
     [SerializeField] private float LungeSpeed = 15f;
     [SerializeField] private float LungeDuration = 0.2f;
-    [SerializeField] private float PostLungeCooldown = 0.5f;
 
     private float LastAttackTime;
     private bool IsLunging;
@@ -60,24 +60,33 @@ public class EnemyAIRephaimTannk : MonoBehaviour
         LungeTargetPosition = Player.position;
         LastAttackTime = Time.time;
 
-        LungeMovement();
+        Anim.SetTrigger("Lunge");
     }
 
-    private void LungeMovement()
+    private IEnumerator LungeMovement()
     {
-        Anim.SetTrigger("Lunge");
+        print("here");
 
         float timer = 0;
         Vector2 startPosition = transform.position;
+        float actualDistance = Vector2.Distance(startPosition, LungeTargetPosition);
+        float calculatedSpeed = actualDistance / LungeDuration;
 
-        while (timer < LungeDuration)
+        while (timer < (LungeDuration * 2))
         {
-            transform.position = Vector2.Lerp(startPosition, LungeTargetPosition, timer / LungeDuration);
+            transform.position = Vector2.Lerp(
+                startPosition,
+                LungeTargetPosition,
+                timer / (LungeDuration * 2)
+            );
+
             timer += Time.deltaTime;
+            yield return null;
         }
 
         transform.position = LungeTargetPosition;
 
+     
         Anim.SetTrigger("Attack");
     }
 
@@ -87,6 +96,12 @@ public class EnemyAIRephaimTannk : MonoBehaviour
             LeanTween.rotateY(gameObject, 0, 0).setEaseInOutSine();
         else
             LeanTween.rotateY(gameObject, 180, 0).setEaseInOutSine();
+    }
+    
+    // Animation Events
+    private void LungeMovementEvent()
+    {
+        StartCoroutine(LungeMovement());
     }
 
     private void EndAttack()
