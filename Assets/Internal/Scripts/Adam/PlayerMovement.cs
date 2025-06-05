@@ -14,15 +14,22 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask m_GroundLayer;
     public LayerMask m_WallLayer;
 
+    [Header("Float")]
+    public float m_FloatGravityScale = 1.5f;
+    public float m_MaxFloatTime = 0.5f;
+
     [Header("Wall Sliding")]
     public float m_WallSlideSpeed = 2f;
     public float m_WallSlideGravity = 1f;
     public float m_WallJumpHorizontalForce = 8f;
     public float m_WallJumpVerticalForce = 15f;
 
+    public float m_MinJumpHeightMultiplier = 0.5f; // Minimum jump height (quick tap)
+    public float m_MaxJumpHoldTime = 0.2f; // Max time holding space to reach full jump height
+
     private float GroundCheckRadius = 0.1f;
     private float MoveInput;
-    private float WallJumpCooldown = 1.1f;
+    private float WallJumpCooldown = 0f;
     private float HorizontalInput;
     private float WallDirection;
 
@@ -30,9 +37,12 @@ public class PlayerMovement : MonoBehaviour
     private bool WasGroundedLastFrame = false;
     private bool WasWallSlidingLastFrame = false;
 
+    private float FloatTimer;
+    private bool IsFloating;
+
     private float _fallSpeedYDampingChangeThreshold;
 
-    private Rigidbody2D Body;
+    private Rigidbody2D RB;
     private SpriteRenderer SpriteRenderer;
     private GameObject PlayerObject;
     private Transform GroundCheck;
@@ -41,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
-        Body = GetComponent<Rigidbody2D>();
+        RB = GetComponent<Rigidbody2D>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
         BoxCollider = GetComponent<BoxCollider2D>();
         Anim = GetComponent<Animator>();
@@ -71,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        Body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        RB.constraints = RigidbodyConstraints2D.FreezeRotation;
         Anim.SetBool("CanMove", true);
         //Time.timeScale = 0.5f;
 
@@ -89,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
         MoveInput = Input.GetAxis("Horizontal");
 
-        Anim.SetBool("IsWallSliding", OnWall() && !IsGrounded() && Body.linearVelocity.y < 0);
+        Anim.SetBool("IsWallSliding", OnWall() && !IsGrounded() && RB.linearVelocity.y < 0);
 
 
         if (IsGrounded())
@@ -100,14 +110,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (Anim.GetBool("IsWallSliding"))
         {
-            Body.linearVelocity = new Vector2(0, Mathf.Max(Body.linearVelocity.y, -m_WallSlideSpeed));
-            Body.gravityScale = m_WallSlideGravity;
+            RB.linearVelocity = new Vector2(0, Mathf.Max(RB.linearVelocity.y, -m_WallSlideSpeed));
+            RB.gravityScale = m_WallSlideGravity;
         }
         else if (WallJumpCooldown > 1f)
         {
             Anim.SetBool("IsRunning", Anim.GetBool("IsGrounded") && MoveInput != 0);
-            Body.linearVelocity = new Vector2(MoveInput * m_Speed, Body.linearVelocity.y);
-            Body.gravityScale = m_GravityScale;
+            RB.linearVelocity = new Vector2(MoveInput * m_Speed, RB.linearVelocity.y);
+            RB.gravityScale = m_GravityScale;
         }
 
         UpdatePlayerFacing();
@@ -119,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             WallJumpCooldown += Time.deltaTime;
+            IsFloating = false;
         }
 
         UpdateGravity();
@@ -169,23 +180,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateGravity()
     {
-        if (Body.linearVelocity.y < 0.1f)
+        if (IsFloating)
         {
-            Body.gravityScale = m_GravityScale * m_FallMultiplier;
+            RB.gravityScale = m_FloatGravityScale;
         }
-        else if (Body.linearVelocity.y > 0.1f && !Input.GetKey(KeyCode.Space))
+        else if (RB.linearVelocity.y < 0.1f)
         {
-            Body.gravityScale = m_GravityScale * m_LowJumpMultiplier;
+            RB.gravityScale = m_GravityScale * m_FallMultiplier;
+        }
+        else if (RB.linearVelocity.y > 0.1f && !Input.GetKey(KeyCode.Space))
+        {
+            RB.gravityScale = m_GravityScale * m_LowJumpMultiplier;
         }
         else
         {
-            Body.gravityScale = m_GravityScale;
+            RB.gravityScale = m_GravityScale;
         }
     }
 
     private void HandleGroundJump()
     {
-        Body.linearVelocity = new Vector2(Body.linearVelocity.x, m_JumpForce);
+        RB.linearVelocity = new Vector2(RB.linearVelocity.x, m_JumpForce);
         Anim.SetTrigger("Jump");
     }
 
@@ -201,14 +216,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float wallDirection = GetFacingDirection();
         print(wallDirection);
-        //Body.linearVelocity = new Vector2(
-        //    wallDirection * m_WallJumpHorizontalForce,
-        //    m_WallJumpVerticalForce
-        //);
 
-        print(Body.linearVelocity);
-        Body.linearVelocity = new Vector2(-wallDirection * m_WallJumpHorizontalForce, m_WallJumpVerticalForce);
-        print(Body.linearVelocity);
+        print(RB.linearVelocity);
+        RB.linearVelocity = new Vector2(-wallDirection * m_WallJumpHorizontalForce, m_WallJumpVerticalForce);
+        print(RB.linearVelocity);
         Flip(-wallDirection);
 
         WallJumpCooldown = 0;
@@ -221,7 +232,7 @@ public class PlayerMovement : MonoBehaviour
         {
             HandleGroundJump();
         }
-        else if (Anim.GetBool("IsWallSliding") && WallJumpCooldown > 1f)
+        else if (Anim.GetBool("IsWallSliding"))
         {
             HandleWallJump();
         }

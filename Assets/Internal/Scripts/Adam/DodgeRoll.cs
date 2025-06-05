@@ -3,6 +3,7 @@ using UnityEngine;
 public class DodgeRoll : MonoBehaviour
 {
     [Header("Roll")]
+    public bool m_RollIFrames = true;
     public float m_RollDuration = 0.4f;
     public float m_RollSpeed = 10f;
     public float m_PostRollCooldown = 1f;
@@ -22,11 +23,7 @@ public class DodgeRoll : MonoBehaviour
         Anim = GetComponent<Animator>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
         Hitbox = GetComponent<BoxCollider2D>();
-        if (PM == null)
-        {
-            PM = FindFirstObjectByType<PlayerMovement>();
-        }
-
+        PM = FindFirstObjectByType<PlayerMovement>();
         Body = GetComponent<Rigidbody2D>();
     }
 
@@ -95,11 +92,13 @@ public class DodgeRoll : MonoBehaviour
     
     private void DisableHitbox()
     {
+        if (!m_RollIFrames) return;
         Hitbox.enabled = false;
     }
 
     private void EnableHitbox()
     {
+        if (!m_RollIFrames) return;
         Hitbox.enabled = true;
     }
 }

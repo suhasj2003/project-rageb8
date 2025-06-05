@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005a36043e3ef8d44b8eb550b1e46752, type: 3}
   m_Name: AxeLight
   m_EditorClassIdentifier: 
-  AttackName: Attack1
-  Damage: 10
+  AttackName: AxeLight
+  Damage: 15
   KnockbackForce: 3
   AttackCooldown: 0.5

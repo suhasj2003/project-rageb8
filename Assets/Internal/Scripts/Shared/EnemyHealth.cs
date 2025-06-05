@@ -5,8 +5,8 @@ public class EnemyHealth : MonoBehaviour
     public EnemyData EnemyData;
     private int CurrentHealth;
 
-    public Flash Flash;
-    public HitStop HitStop;
+    private Flash Flash;
+    private HitStop HitStop;
 
     private Animator Anim;
     private BoxCollider2D Box;
@@ -17,6 +17,9 @@ public class EnemyHealth : MonoBehaviour
         Anim = GetComponent<Animator>();
         Box = GetComponent<BoxCollider2D>();
         Body = GetComponent<Rigidbody2D>();
+
+        Flash = GetComponent<Flash>();
+        HitStop = GetComponent<HitStop>();
     }
 
     void Start()

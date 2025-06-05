@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RephaimTatgaraData
   m_EditorClassIdentifier: 
   MaxHP: 100
-  MoveSpeed: 2
+  MoveSpeed: 3
   AttackDamage: 10
   AttackCooldown: 0.5
   AttackRange: 1

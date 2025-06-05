@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005a36043e3ef8d44b8eb550b1e46752, type: 3}
   m_Name: AxeJump
   m_EditorClassIdentifier: 
-  AttackName: 
+  AttackName: AxeJump
   Damage: 10
   KnockbackForce: 11
   AttackCooldown: 0.6
