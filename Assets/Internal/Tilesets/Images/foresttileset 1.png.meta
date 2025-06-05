@@ -342,8 +342,8 @@ TextureImporter:
         y: 160
         width: 16
         height: 16
-      alignment: 9
-      pivot: {x: 0.33, y: 0.535}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,8 +584,8 @@ TextureImporter:
         y: 48
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.13333334}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1338,6 +1338,7 @@ TextureImporter:
       foresttileset 1_46: 349335929
       foresttileset 1_47: 1259538785
       foresttileset 1_48: -575230825
+      foresttileset 1_49: -188831635
       foresttileset 1_5: -6159629888982779660
       foresttileset 1_6: -7628507482035695700
       foresttileset 1_7: -4949981491941616115
