@@ -44,6 +44,7 @@ public class CameraManager : MonoBehaviour
             }
         }
 
+        Debug.Log("CameraManager: Current camera set to " + _currentCamera.name);
         _normYPanAmount = _positionComposer.Damping.y;
 
         _startingTrackedObjectOffset = _positionComposer.TargetOffset;
@@ -168,7 +169,9 @@ public class CameraManager : MonoBehaviour
         bool horizontalSwap)
     {
         float exitDirection = horizontalSwap ? triggerExitDirection.x : triggerExitDirection.y;
-    
+
+        Debug.Log($"Swapping camera: {_currentCamera.name}: {cameraSource.name} to {cameraDestination.name} with exit direction: {exitDirection}");
+
         if (_currentCamera == cameraSource && exitDirection > 0f)
         {
             cameraDestination.enabled = true;

@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,10 +127,10 @@ TextureImporter:
         serializedVersion: 2
         x: 15
         y: 9
-        width: 85
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: houses_1
       rect:
         serializedVersion: 2
-        x: 119
-        y: 9
-        width: 105
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 116
+        y: 10
+        width: 113
+        height: 126
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,9 +172,9 @@ TextureImporter:
         x: 232
         y: 9
         width: 112
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: houses_3
       rect:
         serializedVersion: 2
-        x: 357
-        y: 6
-        width: 172
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 355
+        y: 8
+        width: 176
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 22324a0c7082e7c4593c2e097591577b
     internalID: 0
     vertices: []
     indices: 
