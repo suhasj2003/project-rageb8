@@ -134,12 +134,12 @@ TextureImporter:
       name: props_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 55
-        width: 39
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 56
+        width: 42
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: props_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 63
-        width: 19
-        height: 24
+        x: 52
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: props_2
       rect:
         serializedVersion: 2
-        x: 85
-        y: 63
-        width: 14
-        height: 17
+        x: 84
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: props_3
       rect:
         serializedVersion: 2
-        x: 111
-        y: 16
-        width: 19
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 112
+        y: 17
+        width: 17
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,7 +227,7 @@ TextureImporter:
         width: 22
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,9 +247,9 @@ TextureImporter:
         x: 54
         y: 16
         width: 48
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5205}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,7 +271,7 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f1e82a948c9151d4ea3f520b3254570f
     internalID: 0
     vertices: []
     indices: 
@@ -305,6 +305,7 @@ TextureImporter:
       props_4: -7340963149319210717
       props_5: -2011216184659823745
       props_6: 5618000101936168721
+      props_7: 1807910694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

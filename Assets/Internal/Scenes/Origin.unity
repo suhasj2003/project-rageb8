@@ -7261,7 +7261,7 @@ RectTransform:
   m_Father: {fileID: 8350094658748691122}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7277,6 +7277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3285556998d634fb3426c6ab5438c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RollIFrames: 1
   m_RollDuration: 0.4
   m_RollSpeed: 10
   m_PostRollCooldown: 0.2
@@ -7862,10 +7863,14 @@ MonoBehaviour:
   m_WallLayer:
     serializedVersion: 2
     m_Bits: 512
+  m_FloatGravityScale: 1.5
+  m_MaxFloatTime: 0.5
   m_WallSlideSpeed: 2
   m_WallSlideGravity: 1
   m_WallJumpHorizontalForce: 5
   m_WallJumpVerticalForce: 20
+  m_MinJumpHeightMultiplier: 0.5
+  m_MaxJumpHoldTime: 0.2
 --- !u!20 &3865055881274044504
 Camera:
   m_ObjectHideFlags: 0
@@ -8012,7 +8017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4557351219620861242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8220,7 +8225,7 @@ Transform:
   m_GameObject: {fileID: 6253976111602311668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 46.763752, y: 71.946, z: -10}
+  m_LocalPosition: {x: 46.75754, y: 71.94598, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9039,7 +9044,7 @@ RectTransform:
   m_Father: {fileID: 7356234866459827323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
