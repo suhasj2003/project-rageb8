@@ -11,13 +11,13 @@ public class EnemyAITatgara : MonoBehaviour
     private int StrafeDirection; // -1 = Left, 1 = Right
 
     private BoxCollider2D AttackHitbox;
-    private Rigidbody2D Body;
+    private Rigidbody2D RB;
     private Animator Anim;
     private Transform Player;
 
     void Awake()
     {
-        Body = GetComponent<Rigidbody2D>();
+        RB = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
         AttackHitbox = transform.Find("AttackHitbox").GetComponent<BoxCollider2D>();
         Player = GameObject.FindWithTag("Player").transform;
@@ -25,6 +25,10 @@ public class EnemyAITatgara : MonoBehaviour
 
     void Start()
     {
+        RB.constraints = RigidbodyConstraints2D.FreezeRotation;
+        RB.constraints = RigidbodyConstraints2D.FreezePositionX;
+        RB.constraints = RigidbodyConstraints2D.FreezePositionY;
+
         AttackHitbox.gameObject.SetActive(false);
         Anim.SetBool("CanMove", true);
     }
