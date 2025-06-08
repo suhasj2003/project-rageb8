@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496238602385158918
 Transform:
   m_ObjectHideFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackData: {fileID: 11400000, guid: fdb7b69c4cf4a084e8ad2175e65c877a, type: 2}
+  jumpHeavyUpwardForce: 5
 --- !u!1 &527448086735496910
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackData: {fileID: 11400000, guid: dc549a3c34608324bba141193cf51468, type: 2}
+  jumpHeavyUpwardForce: 2
 --- !u!1 &6147518556132621325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +1014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4382995802339809489
 Transform:
   m_ObjectHideFlags: 0
@@ -1087,6 +1089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackData: {fileID: 11400000, guid: 11a4745711b28d243bd7637bc7032fae, type: 2}
+  jumpHeavyUpwardForce: 2
 --- !u!1 &6479728194546998210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,3 +1272,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackData: {fileID: 11400000, guid: eee939e34e4d6ac4f9fe4c25cf608d9e, type: 2}
+  jumpHeavyUpwardForce: 2
