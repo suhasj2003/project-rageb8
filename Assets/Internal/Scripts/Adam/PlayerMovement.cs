@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         SpriteRenderer = GetComponent<SpriteRenderer>();
         BoxCollider = GetComponent<BoxCollider2D>();
         Anim = GetComponent<Animator>();
-        PlayerObject = GameObject.Find("Player");
+        PlayerObject = GameObject.Find("Adam");
         //GroundCheck = gameObject.transform.Find("GroundCheck");
 
         GroundCheck = GetOrCreateGroundCheck("GroundCheck", new Vector3(0f, 0f, 0f), Vector3.one);
