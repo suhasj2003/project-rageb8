@@ -9,14 +9,17 @@ public class AxeAttack : MonoBehaviour
     private Animator Anim;
     private BoxCollider2D AxeLightHitbox;
     private BoxCollider2D AxeHeavyHitbox;
-    private BoxCollider2D AxeKickHitbox;
+    private BoxCollider2D AxeJumpLightHitbox;
+    private BoxCollider2D AxeJumpHeavyHitbox;
 
     void Awake()
     {
         Anim = GetComponent<Animator>();
+
         AxeLightHitbox = transform.Find("AxeLightHitbox").GetComponent<BoxCollider2D>();
         AxeHeavyHitbox = transform.Find("AxeHeavyHitbox").GetComponent<BoxCollider2D>();
-        AxeKickHitbox = transform.Find("AxeKickHitbox").GetComponent<BoxCollider2D>();
+        AxeJumpLightHitbox = transform.Find("AxeJumpLightHitbox").GetComponent<BoxCollider2D>();
+        AxeJumpHeavyHitbox = transform.Find("AxeJumpHeavyHitbox").GetComponent<BoxCollider2D>();
     }
 
     void Start()
@@ -45,7 +48,11 @@ public class AxeAttack : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {  
-                    AxeJump();
+                    AxeJumpLight();
+                }
+                else if (Input.GetMouseButtonDown(1))
+                {
+                    AxeJumpHeavy();
                 }
             }
         }
@@ -63,7 +70,6 @@ public class AxeAttack : MonoBehaviour
         Anim.SetBool("IsAttacking", true);
         Anim.SetBool("CanMove", false);
         Anim.SetTrigger("AxeLight");
-        AxeLightHitboxToggle();
     }
 
     private void AxeHeavy()
@@ -71,14 +77,18 @@ public class AxeAttack : MonoBehaviour
         Anim.SetBool("IsAttacking", true);
         Anim.SetBool("CanMove", false);
         Anim.SetTrigger("AxeHeavy");
-        AxeHeavyHitboxToggle();
     }
 
-    private void AxeJump()
+    private void AxeJumpLight()
     {
         Anim.SetBool("IsAttacking", true);
-        Anim.SetTrigger("AxeJump");
-        AxeKickHitboxToggle();
+        Anim.SetTrigger("AxeJumpLight");
+    }
+
+    private void AxeJumpHeavy()
+    {
+        Anim.SetBool("IsAttacking", true);
+        Anim.SetTrigger("AxeJumpHeavy");
     }
 
     private void EndAttack()
@@ -97,51 +107,43 @@ public class AxeAttack : MonoBehaviour
         }
     }
 
-    private void AxeLightHitboxToggle()
+    void ActivateHitbox(int Mux)
     {
-        Invoke("ActivateAxeLightHitbox", 0.1f);
-        Invoke("DeactivateAxeLightHitbox", 0.25f);
+        switch(Mux)
+        {
+            case 0:
+                AxeLightHitbox.gameObject.SetActive(true);
+                break;
+            case 1:
+                AxeHeavyHitbox.gameObject.SetActive(true);
+                break;
+            case 2:
+                AxeJumpLightHitbox.gameObject.SetActive(true);
+                break;
+            case 3:
+                AxeJumpHeavyHitbox.gameObject.SetActive(true);
+                break;
+        }
+        
     }
 
-    private void AxeHeavyHitboxToggle()
+    void DeactivateHitbox(int Mux)
     {
-        Invoke("ActivateAxeHeavyHitbox", 0.1f);
-        Invoke("DeactivateAxeHeavyHitbox", 0.25f);
-    }
+        switch (Mux)
+        {
+            case 0:
+                AxeLightHitbox.gameObject.SetActive(false);
+                break;
+            case 1:
+                AxeHeavyHitbox.gameObject.SetActive(false);
+                break;
+            case 2:
+                AxeJumpLightHitbox.gameObject.SetActive(false);
+                break;
+            case 3:
+                AxeJumpHeavyHitbox.gameObject.SetActive(false);
+                break;
+        }
 
-    private void AxeKickHitboxToggle()
-    {
-        Invoke("ActivateAxeKickHitbox", 0.1f);
-        Invoke("DeactivateAxeKickHitbox", 0.25f);
-    }
-
-    void ActivateAxeLightHitbox()
-    {
-        AxeLightHitbox.gameObject.SetActive(true);
-    }
-
-    void DeactivateAxeLightHitbox()
-    {
-        AxeLightHitbox.gameObject.SetActive(false);
-    }
-
-    void ActivateAxeHeavyHitbox()
-    {
-        AxeHeavyHitbox.gameObject.SetActive(true);
-    }
-
-    void DeactivateAxeHeavyHitbox()
-    {
-        AxeHeavyHitbox.gameObject.SetActive(false);
-    }
-
-    void ActivateAxeKickHitbox()
-    {
-        AxeKickHitbox.gameObject.SetActive(true);
-    }
-
-    void DeactivateAxeKickHitbox()
-    {
-        AxeKickHitbox.gameObject.SetActive(false);
     }
 }
