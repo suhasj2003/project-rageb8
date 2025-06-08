@@ -27,8 +27,6 @@ public class CameraControlTrigger : MonoBehaviour
                     false);
             }
         }
-
-        Debug.Log("CameraControlTrigger: Player entered trigger area.");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -57,8 +55,6 @@ public class CameraControlTrigger : MonoBehaviour
                    true);
             }
         }
-
-        Debug.Log("CameraControlTrigger: Player exited trigger area.");
     }
 }
 
